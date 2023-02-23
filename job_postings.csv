@@ -1,0 +1,16 @@
+id,company,title,category,employment_type,location,skill_1,skill_2,skill_3
+1,AceTech,Chief Executive Officer,Executive,Full-time,San Francisco,Leadership,Strategy,Management
+2,NovaCorp,Chief Operating Officer,Executive,Full-time,New York,Operations,Finance,Management
+3,Sunrise Holdings,Chief Financial Officer,Executive,Full-time,Los Angeles,Finance,Accounting,Investment
+4,BlueSky Enterprises,Chief Marketing Officer,Executive,Full-time,Chicago,Marketing,Strategy,Branding
+5,Peak Performance,Chief Technology Officer,Executive,Full-time,Seattle,Technology,Software Development,Data Analytics
+6,Maxwell Dynamics,Chief Information Officer,Executive,Full-time,Dallas,Information Technology,Strategy,Leadership
+7,Spectrum Group,Chief Human Resources Officer,Executive,Full-time,Denver,Human Resources,Recruiting,Training
+8,Golden Horizon,Chief Sales Officer,Executive,Full-time,Miami,Sales,Marketing,Leadership
+9,Infinite Growth,Chief Strategy Officer,Executive,Full-time,Phoenix,Strategy,Management,Leadership
+10,Innovative Ideas,Chief Creative Officer,Executive,Full-time,San Diego,Creative Design,Marketing,Branding
+11,Nimbus Industries,Chief Legal Officer,Executive,Full-time,Detroit,Legal,Compliance,Management
+12,Global Network,Chief Business Development Officer,Executive,Full-time,Houston,Business Development,Strategy,Marketing
+13,Harmony Enterprises,Chief Communications Officer,Executive,Full-time,Atlanta,Communication,Public Relations,Marketing
+14,Quantum Innovations,Chief Innovation Officer,Executive,Full-time,Boston,Innovation,Technology,Product Development
+15,Meridian Solutions,Chief Customer Officer,Executive,Full-time,Washington DC,Customer Service,Marketing,Sales

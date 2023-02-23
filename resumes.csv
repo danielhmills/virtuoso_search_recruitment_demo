@@ -1,0 +1,16 @@
+id,name,location,years_exp,education,previous_company,previous_job_title,skill_1,skill_2,skill_3,skill_4,skill_5
+1,John Doe,San Francisco,8,MBA,Acme Corporation,Senior Manager,Leadership,Strategy,Communication,Financial Analysis,Team Management
+2,Jane Smith,New York,12,PhD,XYZ Corp,Vice President,Leadership,Strategy,Marketing,Operations,Financial Analysis
+3,Adam Johnson,Los Angeles,6,MBA,ABC Inc,Director,Leadership,Team Management,Communication,Project Management,Financial Analysis
+4,Emily Chen,San Francisco,9,MS,Acme Corporation,Senior Manager,Leadership,Strategy,Marketing,Communication,Team Management
+5,Mark Davis,Chicago,10,MBA,XYZ Corp,Vice President,Leadership,Strategy,Marketing,Operations,Financial Analysis
+6,Linda Wilson,New York,7,MS,ABC Inc,Director,Leadership,Project Management,Communication,Strategy,Team Management
+7,Tom Smith,Los Angeles,5,BS,ABC Inc,Manager,Leadership,Project Management,Team Management,Communication,Strategy
+8,Samantha Lee,Chicago,11,MBA,Acme Corporation,Senior Manager,Leadership,Strategy,Marketing,Operations,Financial Analysis
+9,David Johnson,San Francisco,8,BS,XYZ Corp,Manager,Leadership,Team Management,Project Management,Communication,Strategy
+10,Sarah Chen,New York,6,MS,ABC Inc,Director,Leadership,Marketing,Communication,Strategy,Team Management
+11,Robert Davis,Los Angeles,13,MBA,XYZ Corp,Chief Financial Officer,Leadership,Strategy,Financial Analysis,Communication,Operations
+12,Karen Wilson,Chicago,9,PhD,ABC Inc,Senior Manager,Leadership,Strategy,Marketing,Financial Analysis,Operations
+13,Mike Lee,San Francisco,12,MBA,XYZ Corp,Chief Operating Officer,Leadership,Strategy,Marketing,Operations,Team Management
+14,Julia Johnson,New York,7,MS,ABC Inc,Manager,Leadership,Team Management,Communication,Strategy,Marketing
+15,Eric Davis,Los Angeles,10,MBA,Acme Corporation,Senior Manager,Leadership,Strategy,Marketing,Operations,Financial Analysis

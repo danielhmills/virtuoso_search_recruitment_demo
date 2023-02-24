@@ -1,0 +1,27 @@
+id, skill_name, skill_level
+1, Leadership, Advanced
+1, Strategic Planning, Advanced
+1, Business Development, Intermediate
+1, Sales, Intermediate
+1, Team Management, Advanced
+1, Financial Analysis, Intermediate
+2, Financial Reporting, Advanced
+2, Budgeting, Advanced
+2, Accounting, Advanced
+2, Financial Management, Intermediate
+2, Operations Management, Intermediate
+2, Supply Chain Management, Intermediate
+3, Sales Management, Advanced
+3, Business Strategy, Advanced
+3, Relationship Building, Advanced
+3, Marketing, Intermediate
+4, Marketing Strategy, Advanced
+4, Branding, Advanced
+4, Advertising, Intermediate
+4, Market Research, Intermediate
+4, Project Management, Intermediate
+5, Software Development, Advanced
+5, Object-Oriented Programming, Advanced
+5, Web Development, Intermediate
+5, Database Management, Intermediate
+5, User Experience Design, Intermediate

@@ -1,0 +1,6 @@
+id,education_school_name,education_degree,education_field_of_study,education_start_date,education_end_date,education_is_completed
+1,Harvard University,MBA,Business Administration,2015-09-01,2017-05-01,true
+2,Massachusetts Institute of Technology (MIT),Bachelor of Science,Computer Science,2010-09-01,2014-05-01,true
+3,Stanford University,MBA,Business Administration,2012-09-01,2014-05-01,true
+4,University of California, Los Angeles (UCLA),Bachelor of Arts,Marketing,2008-09-01,2012-05-01,true
+5,Columbia University,Bachelor of Science,Computer Science,2017-09-01,2021-05-01,true

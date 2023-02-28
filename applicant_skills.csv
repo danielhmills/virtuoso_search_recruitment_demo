@@ -1,27 +1,27 @@
-id, skill_name, skill_level
-1, Leadership, Advanced
-1, Strategic Planning, Advanced
-1, Business Development, Intermediate
-1, Sales, Intermediate
-1, Team Management, Advanced
-1, Financial Analysis, Intermediate
-2, Financial Reporting, Advanced
-2, Budgeting, Advanced
-2, Accounting, Advanced
-2, Financial Management, Intermediate
-2, Operations Management, Intermediate
-2, Supply Chain Management, Intermediate
-3, Sales Management, Advanced
-3, Business Strategy, Advanced
-3, Relationship Building, Advanced
-3, Marketing, Intermediate
-4, Marketing Strategy, Advanced
-4, Branding, Advanced
-4, Advertising, Intermediate
-4, Market Research, Intermediate
-4, Project Management, Intermediate
-5, Software Development, Advanced
-5, Object-Oriented Programming, Advanced
-5, Web Development, Intermediate
-5, Database Management, Intermediate
-5, User Experience Design, Intermediate
+id,skill_class, skill_name, skill_level
+1,Leadership, Leadership, Advanced
+1,StrategicPlanning, Strategic Planning, Advanced
+1,BusinessDevelopment, Business Development, Intermediate
+1,Sales, Sales, Intermediate
+1,TeamManagement, Team Management, Advanced
+1,FinancialAnalysis, Financial Analysis, Intermediate
+2,FinancialReporting, Financial Reporting, Advanced
+2,Budgeting, Budgeting, Advanced
+2,Accounting, Accounting, Advanced
+2,FinancialManagement, Financial Management, Intermediate
+2,OperationsManagement, Operations Management, Intermediate
+2,SupplyChainManagement, Supply Chain Management, Intermediate
+3,SalesManagement, Sales Management, Advanced
+3,BusinessStrategy, Business Strategy, Advanced
+3,RelationshipBuilding, Relationship Building, Advanced
+3,Marketing, Marketing, Intermediate
+4,MarketingStrategy, Marketing Strategy, Advanced
+4,Branding, Branding, Advanced
+4,Advertising, Advertising, Intermediate
+4,MarketResearch, Market Research, Intermediate
+4,ProjectManagement, Project Management, Intermediate
+5,SoftwareDevelopment, Software Development, Advanced
+5,Object-OrientedProgramming, Object-Oriented Programming, Advanced
+5,WebDevelopment, Web Development, Intermediate
+5,DatabaseManagement, Database Management, Intermediate
+5,UserExperienceDesign, User Experience Design, Intermediate

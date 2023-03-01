@@ -1,9 +1,10 @@
-"id","positions_company_name","positions_title","positions_startDate","positions_endDate","positions_isCurrent","positions_summary"
-1,"ABC Corp","Chief Executive Officer","2019-01-01",,"true","As CEO of ABC Corp, I am responsible for driving overall growth and profitability of the organization."
-1,"DEF Inc","Chief Operating Officer","2017-01-01","2018-12-31","false","As COO of DEF Inc, I was responsible for driving operational excellence across the organization, including supply chain management and logistics."
-2,"GHI LLC","Chief Financial Officer","2020-06-01",,"true","As CFO of GHI LLC, I am responsible for overseeing all financial operations, including accounting, budgeting, and financial reporting."
-2,"JKL Corporation","Chief Operating Officer","2018-01-01","2020-05-31","false","As COO of JKL Corporation, I was responsible for ensuring operational efficiency and driving growth across the organization."
-3,"MNO Enterprises","Vice President of Sales","2015-01-01","2022-01-01","false","As Vice President of Sales at MNO Enterprises, I was responsible for driving revenue growth through strategic partnerships and effective sales team management."
-4,"PQR Industries","Director of Marketing","2018-05-01",,"true","As Director of Marketing at PQR Industries, I am responsible for developing and executing the company's marketing strategy, including branding, advertising, and market research."
-4,"STU LLC","Vice President of Operations","2016-01-01","2018-04-30","false","As Vice President of Operations at STU LLC, I was responsible for overseeing all day-to-day operations, including production, supply chain management, and logistics."
-5,"VWX Company","Software Engineer","2021-01-01",,"true","As a software engineer at VWX Company, I am responsible for developing and maintaining software applications that meet the needs of the organization and its customers."
+"id","positions_company_name","positions_title","positions_startDate","positions_endDate","positions_isCurrent","positions_summary","positions_duration_years"
+1,"ABC Corp","Chief Executive Officer","2019-01-01",,"true","As CEO of ABC Corp, I am responsible for driving overall growth and profitability of the organization.",3
+1,"DEF Inc","Chief Operating Officer","2017-01-01","2018-12-31","false","As COO of DEF Inc, I was responsible for driving operational excellence across the organization, including supply chain management and logistics.",2
+2,"GHI LLC","Chief Financial Officer","2020-06-01",,"true","As CFO of GHI LLC, I am responsible for overseeing all financial operations, including accounting, budgeting, and financial reporting.",1
+2,"JKL Corporation","Chief Operating Officer","2018-01-01","2020-05-31","false","As COO of JKL Corporation, I was responsible for ensuring operational efficiency and driving growth across the organization.",2
+3,"MNO Enterprises","Vice President of Sales","2015-01-01","2022-01-01","false","As Vice President of Sales at MNO Enterprises, I was responsible for driving revenue growth through strategic partnerships and effective sales team management.",7
+4,"PQR Industries","Director of Marketing","2018-05-01",,"true","As Director of Marketing at PQR Industries, I am responsible for developing and executing the company's marketing strategy, including branding, advertising, and market research.",3
+4,"STU LLC","Vice President of Operations","2016-01-01","2018-04-30","false","As Vice President of Operations at STU LLC, I was responsible for overseeing all day-to-day operations, including production, supply chain management, and logistics.",2
+5,"VWX Company","Software Engineer","2021-01-01",,"true","As a software engineer at VWX Company, I am responsible for developing and maintaining software applications that meet the needs of the organization and its customers.",2
+"

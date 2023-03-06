@@ -16,6 +16,8 @@ CREATE TABLE "demo"."search"."applicants" (
   PRIMARY KEY ("applicant_id")
 );
 
+GRANT SELECT ON "demo"."search"."applicants" TO SPARQL_SELECT;
+
 INSERT INTO "demo"."search"."applicants" ("applicant_id", "first_name", "last_name", "email", "phone_number", "street_address", "city", "state", "zip_code", "location_uri", "state_uri")
 VALUES (1, 'John', 'Doe', 'johndoe@email.com', '(23)-56-7890', '123 Main St', 'Springfield', 'IL', '12345', 'Springfield_Illinois', 'Illinois');
 
@@ -42,6 +44,8 @@ CREATE TABLE "demo"."search"."applicant_skills" (
 "skill_level" VARCHAR(255),
 PRIMARY KEY ("id")
 );
+
+GRANT SELECT ON "demo"."search"."applicant_skills" TO SPARQL_SELECT;
 
 INSERT INTO "demo"."search"."applicant_skills"   
 VALUES (1, 1, 'Leadership', 'Leadership', 'Advanced');
@@ -97,6 +101,9 @@ CREATE TABLE "demo"."search"."applicant_positions" (
     PRIMARY KEY ("id")
 );
 
+GRANT SELECT ON "demo"."search"."applicant_positions" TO SPARQL_SELECT;
+
+
 INSERT INTO "demo"."search"."applicant_positions"   
 VALUES (1, 1, 'ABC Corp', 'ABCCorp', 'Chief Executive Officer', 'ChiefExecutiveOfficer', '2019-01-01', NULL, 'true', 'As CEO of ABC Corp, I am responsible for driving overall growth and profitability of the organization.', 3);
 
@@ -143,6 +150,9 @@ CREATE TABLE "demo"."search"."applicant_languages" (
 "proficiency" VARCHAR(255),
 PRIMARY KEY ("id")
 );
+
+GRANT SELECT ON "demo"."search"."applicant_languages" TO SPARQL_SELECT;
+
 
 INSERT INTO "demo"."search"."applicant_languages"
 VALUES (1, 1, 'English', 'Fluent');
@@ -195,17 +205,20 @@ CREATE TABLE "demo"."search"."applicant_education" (
 PRIMARY KEY ("id")
 );
 
+GRANT SELECT ON "demo"."search"."applicant_education" TO SPARQL_SELECT;
+
+
 INSERT INTO "demo"."search"."applicant_education"
 VALUES (1, 'Harvard University', 'Harvard_University', 'MBA', 'MBA', 'Business Administration', 'Business_Administration', '2015-09-01', '2017-05-01', 'true');
 
 INSERT INTO "demo"."search"."applicant_education"
-VALUES (2, 'Massachusetts Institute of Technology (MIT)', 'Massachusetts_Institute_of_Technology_(MIT)', 'Bachelor of Science', 'Bachelor_of_Science', 'Computer Science', 'Computer_Science', '2010-09-01', '2014-05-01', 'true');
+VALUES (2, 'Massachusetts Institute of Technology (MIT)', 'Massachusetts_Institute_of_Technology', 'Bachelor of Science', 'Bachelor_of_Science', 'Computer Science', 'Computer_Science', '2010-09-01', '2014-05-01', 'true');
 
 INSERT INTO "demo"."search"."applicant_education"
 VALUES (3, 'Stanford University', 'Stanford_University', 'MBA', 'MBA', 'Business Administration', 'Business_Administration', '2012-09-01', '2014-05-01', 'true');
 
 INSERT INTO "demo"."search"."applicant_education"
-VALUES (4, 'University of California, Los Angeles (UCLA)', 'University_of_California,Los_Angeles(UCLA)', 'Bachelor of Arts', 'Bachelor_of_Arts', 'Marketing', 'Marketing', '2008-09-01', '2012-05-01', 'true');
+VALUES (4, 'University of California, Los Angeles (UCLA)', 'University_of_California,_Los_Angeles', 'Bachelor of Arts', 'Bachelor_of_Arts', 'Marketing', 'Marketing', '2008-09-01', '2012-05-01', 'true');
 
 INSERT INTO "demo"."search"."applicant_education"
 VALUES (5, 'Columbia University', 'Columbia_University', 'Bachelor of Science', 'Bachelor_of_Science', 'Computer Science', 'Computer_Science', '2017-09-01', '2021-05-01', 'true');
@@ -221,6 +234,9 @@ CREATE TABLE "demo"."search"."applicant_certifications" (
 "certifications_date" DATE,
 PRIMARY KEY ("id")
 );
+
+GRANT SELECT ON "demo"."search"."applicant_certifications" TO SPARQL_SELECT;
+
 
 INSERT INTO "demo"."search"."applicant_certifications"
 VALUES (1, 'Certified Business Analysis Professional (CBAP)', 'International Institute of Business Analysis (IIBA)', '2021-06-01');
@@ -260,6 +276,8 @@ CREATE TABLE demo.search.job_postings (
     skill_3_class VARCHAR(255),
     PRIMARY KEY (id)
 );
+
+GRANT SELECT ON "demo"."search"."job_postings" TO SPARQL_SELECT;
 
 INSERT INTO demo.search.job_postings 
 VALUES (1,'AceTech','AceTech','Chief Executive Officer','ChiefExecutiveOfficer','Chief_Executive_Officer','Executive','Full-Time','San Francisco','Leadership','Strategic Planning','Business Development','Leadership','StrategicPlanning','BusinessDevelopment');

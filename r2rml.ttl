@@ -32,10 +32,10 @@ rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:zipCode ] ; rr
 
 <#TriplesMapPositions_Map> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "demo" ; rr:tableOwner "search" ; rr:tableName "applicant_positions" ]; 
 rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/demo/recruitment/applicant/{applicant_id}#this"; rr:class recruitment:JobApplicant; rr:graph <http://demo.openlinksw.com/recruitment_demo#> ];
-rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:jobEvent ] ; rr:objectMap [ rr:termType rr:IRI; rr:template "http://demo.openlinksw.com/demo/recruitment/applicant/{applicant_id}/{positions_company_uri}#job_event" ]; ] .
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:jobEvent ] ; rr:objectMap [ rr:termType rr:IRI; rr:template "http://demo.openlinksw.com/demo/recruitment/applicant/{applicant_id}/{positions_company_uri}/{id}#job_event" ]; ] .
 
 <#TriplesMapPositions> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "demo" ; rr:tableOwner "search" ; rr:tableName "applicant_positions" ]; 
-rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/demo/recruitment/applicant/{applicant_id}/{positions_company_uri}#job_event"; rr:class recruitment:JobEvent; rr:graph <http://demo.openlinksw.com/recruitment_demo#> ];
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/demo/recruitment/applicant/{applicant_id}/{positions_company_uri}/{id}#job_event"; rr:class recruitment:JobEvent; rr:graph <http://demo.openlinksw.com/recruitment_demo#> ];
 rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:id ] ; rr:objectMap [ rr:column "applicant_id" ]; ] ;
 rr:predicateObjectMap [ rr:predicateMap [ rr:constant rdfs:label ] ; rr:objectMap [ rr:termType rr:Literal; rr:template "Work Experience: {positions_title} @{positions_company_name}" ]; ] ;
 rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:jobEventCompany ] ; rr:objectMap [ rr:termType rr:IRI; rr:template "http://demo.openlinksw.com/demo/recruitment/company/{positions_company_uri}#this" ]; ] ;

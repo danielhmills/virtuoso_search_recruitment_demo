@@ -1,0 +1,148 @@
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix recruitment: <http://www.openlinksw.com/ontology/recruitment#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+
+recruitment:jobPostingCategory
+        rdfs:domain  recruitment:JobPosting ;
+        rdfs:label   "jobPostingCategory" ;
+        rdfs:range   recruitment:JobCategory .
+
+recruitment:hasEducationEndDate
+        rdfs:domain  recruitment:EducationEvent ;
+        rdfs:label   "hasEducationEndDate" ;
+        rdfs:range   xsd:date .
+
+recruitment:firstName
+        rdfs:domain         recruitment:JobApplicant ;
+        rdfs:label          "firstName" ;
+        rdfs:range          xsd:string ;
+        rdfs:subPropertyOf  foaf:firstName .
+
+recruitment:state  rdfs:domain  recruitment:Address ;
+        rdfs:label   "state" ;
+        rdfs:range   xsd:string .
+
+recruitment:phoneNumber
+        rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label   "phoneNumber" ;
+        rdfs:range   recruitment:Address .
+
+recruitment:email  rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label          "email" ;
+        rdfs:range          owl:Thing ;
+        rdfs:subPropertyOf  foaf:mbox .
+
+recruitment:jobPostingPosition
+        rdfs:domain  recruitment:JobPosting ;
+        rdfs:label   "jobPostingPosition" ;
+        rdfs:range   recruitment:JobPosition .
+
+recruitment:zipCode  rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label   "zipCode" ;
+        rdfs:range   xsd:string .
+
+recruitment:city  rdfs:domain  recruitment:Address ;
+        rdfs:label   "city" ;
+        rdfs:range   xsd:string .
+
+recruitment:jobPostingRequiredSkill
+        rdfs:domain  recruitment:JobPosting ;
+        rdfs:label   "jobPostingRequiredSkill" ;
+        rdfs:range   recruitment:Skill .
+
+recruitment:isEducationCompleted
+        rdfs:domain  recruitment:EducationEvent ;
+        rdfs:label   "isEducationCompleted" ;
+        rdfs:range   xsd:string .
+
+recruitment:streetAddress
+        rdfs:domain  recruitment:Address ;
+        rdfs:label   "streetAddress" ;
+        rdfs:range   xsd:string .
+
+recruitment:hasEducationFieldOfStudy
+        rdfs:domain  recruitment:EducationEvent ;
+        rdfs:label   "hasEducationFieldOfStudy" ;
+        rdfs:range   owl:Thing .
+
+recruitment:jobEvent  rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label   "jobEvent" ;
+        rdfs:range   recruitment:JobEvent .
+
+recruitment:positionStartDate
+        rdfs:domain  recruitment:JobEvent ;
+        rdfs:label   "positionStartDate" ;
+        rdfs:range   xsd:date .
+
+recruitment:hasEducation
+        rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label   "hasEducation" ;
+        rdfs:range   recruitment:EducationEvent .
+
+recruitment:positionEndDate
+        rdfs:domain  recruitment:JobEvent ;
+        rdfs:label   "positionEndDate" ;
+        rdfs:range   xsd:date .
+
+recruitment:positionSummary
+        rdfs:domain  recruitment:JobEvent ;
+        rdfs:label   "positionSummary" ;
+        rdfs:range   xsd:string .
+
+recruitment:hasEducationDegreeEarned
+        rdfs:domain  recruitment:EducationEvent ;
+        rdfs:label   "hasEducationDegreeEarned" ;
+        rdfs:range   owl:Thing .
+
+recruitment:hasEducationLocation
+        rdfs:domain  recruitment:EducationEvent ;
+        rdfs:label   "hasEducationLocation" ;
+        rdfs:range   owl:Thing .
+
+recruitment:hasSkillLevel
+        rdfs:domain  recruitment:SkillMap ;
+        rdfs:label   "hasSkillLevel" ;
+        rdfs:range   recruitment:SkillLevel .
+
+recruitment:hasListedSkill
+        rdfs:domain  recruitment:SkillMap ;
+        rdfs:label   "hasListedSkill" ;
+        rdfs:range   recruitment:Skill .
+
+recruitment:applicantAddress
+        rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label   "applicantAddress" ;
+        rdfs:range   owl:Thing .
+
+recruitment:lastName  rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label          "lastName" ;
+        rdfs:range          xsd:string ;
+        rdfs:subPropertyOf  foaf:lastName .
+
+recruitment:jobEventCompany
+        rdfs:domain  recruitment:JobEvent ;
+        rdfs:label   "jobEventCompany" ;
+        rdfs:range   recruitment:Company .
+
+recruitment:isCurrentPosition
+        rdfs:domain  recruitment:JobEvent ;
+        rdfs:label   "isCurrentPosition" ;
+        rdfs:range   xsd:string .
+
+recruitment:hasEdicationStartDate
+        rdfs:domain  recruitment:EducationEvent ;
+        rdfs:label   "hasEdicationStartDate" ;
+        rdfs:range   xsd:date .
+
+recruitment:hasSkillMap
+        rdfs:domain  recruitment:JobApplicant ;
+        rdfs:label   "hasSkillMap" ;
+        rdfs:range   recruitment:SkillMap .
+
+recruitment:jobPosition
+        rdfs:domain  recruitment:JobEvent ;
+        rdfs:label   "jobPosition" ;
+        rdfs:range   recruitment:JobPosition .

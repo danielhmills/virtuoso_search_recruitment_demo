@@ -1,27 +1,27 @@
-id,skill_class, skill_name, skill_level
-1,Leadership, Leadership, Advanced
-1,StrategicPlanning, Strategic Planning, Advanced
-1,BusinessDevelopment, Business Development, Intermediate
-1,Sales, Sales, Intermediate
-1,TeamManagement, Team Management, Advanced
-1,FinancialAnalysis, Financial Analysis, Intermediate
-2,FinancialReporting, Financial Reporting, Advanced
-2,Budgeting, Budgeting, Advanced
-2,Accounting, Accounting, Advanced
-2,FinancialManagement, Financial Management, Intermediate
-2,OperationsManagement, Operations Management, Intermediate
-2,SupplyChainManagement, Supply Chain Management, Intermediate
-3,SalesManagement, Sales Management, Advanced
-3,BusinessStrategy, Business Strategy, Advanced
-3,RelationshipBuilding, Relationship Building, Advanced
-3,Marketing, Marketing, Intermediate
-4,MarketingStrategy, Marketing Strategy, Advanced
-4,Branding, Branding, Advanced
-4,Advertising, Advertising, Intermediate
-4,MarketResearch, Market Research, Intermediate
-4,ProjectManagement, Project Management, Intermediate
-5,SoftwareDevelopment, Software Development, Advanced
-5,Object-OrientedProgramming, Object-Oriented Programming, Advanced
-5,WebDevelopment, Web Development, Intermediate
-5,DatabaseManagement, Database Management, Intermediate
-5,UserExperienceDesign, User Experience Design, Intermediate
+id,applicant_id,skill_class,skill_name,skill_level
+1,1,Leadership,Leadership,Advanced
+2,1,StrategicPlanning,Strategic Planning,Advanced
+3,1,BusinessDevelopment,Business Development,Intermediate
+4,1,Sales,Sales,Intermediate
+5,1,TeamManagement,Team Management,Advanced
+6,1,FinancialAnalysis,Financial Analysis,Intermediate
+7,2,FinancialReporting,Financial Reporting,Advanced
+8,2,Budgeting,Budgeting,Advanced
+9,2,Accounting,Accounting,Advanced
+10,2,FinancialManagement,Financial Management,Intermediate
+11,2,OperationsManagement,Operations Management,Intermediate
+12,2,SupplyChainManagement,Supply Chain Management,Intermediate
+13,3,SalesManagement,Sales Management,Advanced
+14,3,BusinessStrategy,Business Strategy,Advanced
+15,3,RelationshipBuilding,Relationship Building,Advanced
+16,3,Marketing,Marketing,Intermediate
+17,4,MarketingStrategy,Marketing Strategy,Advanced
+18,4,Branding,Branding,Advanced
+19,4,Advertising,Advertising,Intermediate
+20,4,MarketResearch,Market Research,Intermediate
+21,4,ProjectManagement,Project Management,Intermediate
+22,5,SoftwareDevelopment,Software Development,Advanced
+23,5,Object-OrientedProgramming,Object-Oriented Programming,Advanced
+24,5,WebDevelopment,Web Development,Intermediate
+25,5,DatabaseManagement,Database Management,Intermediate
+26,5,UserExperienceDesign,User Experience Design,Intermediate

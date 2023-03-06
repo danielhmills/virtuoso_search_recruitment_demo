@@ -1,4 +1,4 @@
-id,first_name,last_name,email,phone_number,street_address,city,state,zip_code,location_uri,state_uri
+applicant_id,first_name,last_name,email,phone_number,street_address,city,state,zip_code,location_uri,state_uri
 1,John,Doe,johndoe@email.com,(23)-56-7890,123 Main St,Springfield,IL,12345,Springfield_Illinois,Illinois
 2,Jane,Smith,janesmith@email.com,555-555-5555,456 Oak St,Chicago,IL,54321,Chicago_Illinois,Illinois
 3,Michael,Johnson,michaelj@example.com,123-123-1234,789 Maple Ave,Madison,WI,67890,Madison_Wisconsin,Wisconsin

@@ -1,3 +1,5 @@
+## TURTLE START ##
+
 #Target Graph IRI: http://demo.openlinksw.com/recruitment_demo
 #Virtual Graph: http://demo.openlinksw.com/recruitment_demo#
 #Physical Graph: urn:demo.openlinksw.com:recruitment_demo
@@ -91,4 +93,4 @@ rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:jobPostingRequ
 rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:jobPostingRequiredSkill ] ; rr:objectMap [ rr:termType rr:IRI; rr:template "http://www.openlinksw.com/ontology/recruitment#{skill_2_class}" ]; ] ;
 rr:predicateObjectMap [ rr:predicateMap [ rr:constant recruitment:jobPostingRequiredSkill ] ; rr:objectMap [ rr:termType rr:IRI; rr:template "http://www.openlinksw.com/ontology/recruitment#{skill_3_class}" ]; ] .
 
-
+## TURTLE END ##

@@ -1,3 +1,5 @@
+## Turtle Start ##
+
 @prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ns1:	<http://demo.openlinksw.com/demo/recruitment/applicant/1#> .
 @prefix ns2:	<http://www.openlinksw.com/ontology/recruitment#> .
@@ -454,3 +456,5 @@ ns45:this
 	ns2:jobPostingCategory	ns2:Executive ;
 	ns2:jobPostingPosition	ns2:Chief_Strategy_Officer ;
 	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:StrategicPlanning , ns2:BusinessStrategy .
+
+    ## Turtle End ##

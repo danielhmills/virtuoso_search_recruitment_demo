@@ -1,4 +1,4 @@
-## Turtle Start ##
+## TURTLE START ##
 
 @prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ns1:	<http://demo.openlinksw.com/demo/recruitment/applicant/1#> .
@@ -10,42 +10,44 @@
 @prefix ns7:	<http://demo.openlinksw.com/demo/recruitment/applicant/4#> .
 @prefix ns8:	<http://demo.openlinksw.com/demo/recruitment/applicant/5#> .
 @prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ns10:	<http://demo.openlinksw.com/demo/recruitment/applicant/3/MNOEnterprises#> .
-@prefix ns11:	<http://demo.openlinksw.com/demo/recruitment/applicant/4/PQRIndustries#> .
-@prefix ns12:	<http://demo.openlinksw.com/demo/recruitment/applicant/4/STULLC#> .
-@prefix ns13:	<http://demo.openlinksw.com/demo/recruitment/applicant/5/VWXCompany#> .
-@prefix ns14:	<http://demo.openlinksw.com/demo/recruitment/applicant/1/skill#> .
-@prefix ns15:	<http://demo.openlinksw.com/demo/recruitment/applicant/2/skill#> .
-@prefix ns16:	<http://demo.openlinksw.com/demo/recruitment/applicant/1/ABCCorp#> .
-@prefix ns17:	<http://demo.openlinksw.com/demo/recruitment/applicant/1/DEFInc#> .
-@prefix ns18:	<http://demo.openlinksw.com/demo/recruitment/applicant/2/GHILLC#> .
-@prefix ns19:	<http://demo.openlinksw.com/demo/recruitment/applicant/2/JKLCorporation#> .
-@prefix ns20:	<http://demo.openlinksw.com/demo/recruitment/company/ABCCorp#> .
-@prefix ns21:	<http://demo.openlinksw.com/demo/recruitment/company/DEFInc#> .
-@prefix ns22:	<http://demo.openlinksw.com/demo/recruitment/company/GHILLC#> .
-@prefix ns23:	<http://demo.openlinksw.com/demo/recruitment/company/JKLCorporation#> .
-@prefix ns24:	<http://demo.openlinksw.com/demo/recruitment/company/MNOEnterprises#> .
-@prefix ns25:	<http://demo.openlinksw.com/demo/recruitment/company/PQRIndustries#> .
-@prefix ns26:	<http://demo.openlinksw.com/demo/recruitment/company/STULLC#> .
-@prefix ns27:	<http://demo.openlinksw.com/demo/recruitment/company/VWXCompany#> .
-@prefix ns28:	<http://demo.openlinksw.com/demo/recruitment/applicant/6/YZACorporation#> .
-@prefix ns29:	<http://demo.openlinksw.com/demo/recruitment/company/YZACorporation#> .
-@prefix ns30:	<http://demo.openlinksw.com/demo/recruitment/applicant/7/ABCInc#> .
-@prefix ns31:	<http://demo.openlinksw.com/demo/recruitment/company/ABCInc#> .
-@prefix ns32:	<http://demo.openlinksw.com/demo/recruitment/applicant/6#> .
-@prefix ns33:	<http://demo.openlinksw.com/demo/recruitment/applicant/7#> .
-@prefix ns34:	<http://demo.openlinksw.com/demo/recruitment/jobs/1#> .
-@prefix ns35:	<http://demo.openlinksw.com/demo/recruitment/jobs/10#> .
-@prefix ns36:	<http://demo.openlinksw.com/demo/recruitment/jobs/11#> .
-@prefix ns37:	<http://demo.openlinksw.com/demo/recruitment/jobs/12#> .
-@prefix ns38:	<http://demo.openlinksw.com/demo/recruitment/jobs/2#> .
-@prefix ns39:	<http://demo.openlinksw.com/demo/recruitment/jobs/3#> .
-@prefix ns40:	<http://demo.openlinksw.com/demo/recruitment/jobs/4#> .
-@prefix ns41:	<http://demo.openlinksw.com/demo/recruitment/jobs/5#> .
-@prefix ns42:	<http://demo.openlinksw.com/demo/recruitment/jobs/6#> .
-@prefix ns43:	<http://demo.openlinksw.com/demo/recruitment/jobs/7#> .
-@prefix ns44:	<http://demo.openlinksw.com/demo/recruitment/jobs/8#> .
-@prefix ns45:	<http://demo.openlinksw.com/demo/recruitment/jobs/9#> .
+@prefix ns10:	<http://demo.openlinksw.com/demo/recruitment/applicant/3/MNOEnterprises/5#> .
+@prefix ns11:	<http://demo.openlinksw.com/demo/recruitment/applicant/4/PQRIndustries/6#> .
+@prefix ns12:	<http://demo.openlinksw.com/demo/recruitment/applicant/4/STULLC/7#> .
+@prefix ns13:	<http://demo.openlinksw.com/demo/recruitment/applicant/5/VWXCompany/8#> .
+@prefix ns14:	<http://demo.openlinksw.com/demo/recruitment/applicant/5/VWXCompany/9#> .
+@prefix ns15:	<http://demo.openlinksw.com/demo/recruitment/applicant/1/skill#> .
+@prefix ns16:	<http://demo.openlinksw.com/demo/recruitment/applicant/2/skill#> .
+@prefix ns17:	<http://demo.openlinksw.com/demo/recruitment/applicant/1/ABCCorp/1#> .
+@prefix ns18:	<http://demo.openlinksw.com/demo/recruitment/applicant/1/DEFInc/2#> .
+@prefix ns19:	<http://demo.openlinksw.com/demo/recruitment/applicant/2/GHILLC/3#> .
+@prefix ns20:	<http://demo.openlinksw.com/demo/recruitment/applicant/2/JKLCorporation/4#> .
+@prefix ns21:	<http://demo.openlinksw.com/demo/recruitment/company/ABCCorp#> .
+@prefix ns22:	<http://demo.openlinksw.com/demo/recruitment/company/ABCInc#> .
+@prefix ns23:	<http://demo.openlinksw.com/demo/recruitment/company/DEFInc#> .
+@prefix ns24:	<http://demo.openlinksw.com/demo/recruitment/company/GHILLC#> .
+@prefix ns25:	<http://demo.openlinksw.com/demo/recruitment/company/JKLCorporation#> .
+@prefix ns26:	<http://demo.openlinksw.com/demo/recruitment/company/MNOEnterprises#> .
+@prefix ns27:	<http://demo.openlinksw.com/demo/recruitment/company/PQRIndustries#> .
+@prefix ns28:	<http://demo.openlinksw.com/demo/recruitment/company/STULLC#> .
+@prefix ns29:	<http://demo.openlinksw.com/demo/recruitment/company/VWXCompany#> .
+@prefix ns30:	<http://demo.openlinksw.com/demo/recruitment/company/YZACorporation#> .
+@prefix ns31:	<http://demo.openlinksw.com/demo/recruitment/applicant/6#> .
+@prefix ns32:	<http://demo.openlinksw.com/demo/recruitment/applicant/6/YZACorporation/10#> .
+@prefix ns33:	<http://demo.openlinksw.com/demo/recruitment/applicant/6/YZACorporation/11#> .
+@prefix ns34:	<http://demo.openlinksw.com/demo/recruitment/applicant/7#> .
+@prefix ns35:	<http://demo.openlinksw.com/demo/recruitment/applicant/7/ABCInc/12#> .
+@prefix ns36:	<http://demo.openlinksw.com/demo/recruitment/jobs/1#> .
+@prefix ns37:	<http://demo.openlinksw.com/demo/recruitment/jobs/10#> .
+@prefix ns38:	<http://demo.openlinksw.com/demo/recruitment/jobs/11#> .
+@prefix ns39:	<http://demo.openlinksw.com/demo/recruitment/jobs/12#> .
+@prefix ns40:	<http://demo.openlinksw.com/demo/recruitment/jobs/2#> .
+@prefix ns41:	<http://demo.openlinksw.com/demo/recruitment/jobs/3#> .
+@prefix ns42:	<http://demo.openlinksw.com/demo/recruitment/jobs/4#> .
+@prefix ns43:	<http://demo.openlinksw.com/demo/recruitment/jobs/5#> .
+@prefix ns44:	<http://demo.openlinksw.com/demo/recruitment/jobs/6#> .
+@prefix ns45:	<http://demo.openlinksw.com/demo/recruitment/jobs/7#> .
+@prefix ns46:	<http://demo.openlinksw.com/demo/recruitment/jobs/8#> .
+@prefix ns47:	<http://demo.openlinksw.com/demo/recruitment/jobs/9#> .
 
 ns1:education
 	rdf:type	ns2:EducationEvent ;
@@ -114,7 +116,7 @@ ns8:this
 	ns2:email	<mailto:davidlee@example.com> ;
 	ns2:firstName	"David" ;
 	ns2:hasEducation	ns8:education ;
-	ns2:jobEvent	ns13:job_event ;
+	ns2:jobEvent	ns13:job_event , ns14:job_event ;
 	ns2:lastName	"Lee" ;
 	ns2:phoneNumber	<tel:555-789-1234> .
 ns1:address
@@ -152,51 +154,51 @@ ns8:address
 	ns2:city	dbpedia:Los_Angeles_California ;
 	ns2:state	"CA" ;
 	ns2:zipCode	"98765" .
-ns14:Sales
+ns15:Sales
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:Sales ;
 	ns2:hasSkillLevel	ns2:Intermediate .
-ns15:FinancialManagement
+ns16:FinancialManagement
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:FinancialManagement ;
 	ns2:hasSkillLevel	ns2:Intermediate .
-ns14:BusinessDevelopment
+ns15:BusinessDevelopment
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:BusinessDevelopment ;
 	ns2:hasSkillLevel	ns2:Intermediate .
-ns14:FinancialAnalysis
+ns15:FinancialAnalysis
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:FinancialAnalysis ;
 	ns2:hasSkillLevel	ns2:Intermediate .
-ns14:Leadership
+ns15:Leadership
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:Leadership ;
 	ns2:hasSkillLevel	ns2:Advanced .
-ns14:StrategicPlanning
+ns15:StrategicPlanning
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:StrategicPlanning ;
 	ns2:hasSkillLevel	ns2:Advanced .
-ns14:TeamManagement
+ns15:TeamManagement
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:TeamManagement ;
 	ns2:hasSkillLevel	ns2:Advanced .
-ns15:Accounting
+ns16:Accounting
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:Accounting ;
 	ns2:hasSkillLevel	ns2:Advanced .
-ns15:Budgeting
+ns16:Budgeting
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:Budgeting ;
 	ns2:hasSkillLevel	ns2:Advanced .
-ns15:FinancialReporting
+ns16:FinancialReporting
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:FinancialReporting ;
 	ns2:hasSkillLevel	ns2:Advanced .
-ns15:OperationsManagement
+ns16:OperationsManagement
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:OperationsManagement ;
 	ns2:hasSkillLevel	ns2:Intermediate .
-ns15:SupplyChainManagement
+ns16:SupplyChainManagement
 	rdf:type	ns2:SkillMap ;
 	ns2:hasListedSkill	ns2:SupplyChainManagement ;
 	ns2:hasSkillLevel	ns2:Intermediate .
@@ -207,8 +209,8 @@ ns1:this
 	ns2:email	<mailto:johndoe@email.com> ;
 	ns2:firstName	"John" ;
 	ns2:hasEducation	ns1:education ;
-	ns2:hasSkillMap	ns14:Sales , ns14:BusinessDevelopment , ns14:FinancialAnalysis , ns14:Leadership , ns14:StrategicPlanning , ns14:TeamManagement ;
-	ns2:jobEvent	ns16:job_event , ns17:job_event ;
+	ns2:hasSkillMap	ns15:Sales , ns15:BusinessDevelopment , ns15:FinancialAnalysis , ns15:Leadership , ns15:StrategicPlanning , ns15:TeamManagement ;
+	ns2:jobEvent	ns17:job_event , ns18:job_event ;
 	ns2:lastName	"Doe" ;
 	ns2:phoneNumber	<tel:%2823%29-56-7890> .
 ns5:this
@@ -218,44 +220,182 @@ ns5:this
 	ns2:email	<mailto:janesmith@email.com> ;
 	ns2:firstName	"Jane" ;
 	ns2:hasEducation	ns5:education ;
-	ns2:hasSkillMap	ns15:FinancialManagement , ns15:Accounting , ns15:Budgeting , ns15:FinancialReporting , ns15:OperationsManagement , ns15:SupplyChainManagement ;
-	ns2:jobEvent	ns18:job_event , ns19:job_event ;
+	ns2:hasSkillMap	ns16:FinancialManagement , ns16:Accounting , ns16:Budgeting , ns16:FinancialReporting , ns16:OperationsManagement , ns16:SupplyChainManagement ;
+	ns2:jobEvent	ns19:job_event , ns20:job_event ;
 	ns2:lastName	"Smith" ;
 	ns2:phoneNumber	<tel:555-555-5555> .
-ns16:job_event
+ns21:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"ABC Corp" ;
+	ns2:jobEventCompany	ns21:this ;
+	ns2:jobPosition	"ChiefExecutiveOfficer" ;
+	ns2:positionStartDate	"2019-01-01"^^xsd:date .
+ns22:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"ABC Inc." ;
+	ns2:jobEventCompany	ns22:this ;
+	ns2:jobPosition	"ProjectManager" ;
+	ns2:positionStartDate	"2019-01-01"^^xsd:date .
+ns23:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"DEF Inc" ;
+	ns2:jobEventCompany	ns23:this ;
+	ns2:jobPosition	"ChiefOperatingOfficer" ;
+	ns2:positionStartDate	"2017-01-01"^^xsd:date .
+ns24:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"GHI LLC" ;
+	ns2:jobEventCompany	ns24:this ;
+	ns2:jobPosition	"ChiefFinancialOfficer" ;
+	ns2:positionStartDate	"2020-06-01"^^xsd:date .
+ns25:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"JKL Corporation" ;
+	ns2:jobEventCompany	ns25:this ;
+	ns2:jobPosition	"ChiefOperatingOfficer" ;
+	ns2:positionStartDate	"2018-01-01"^^xsd:date .
+ns26:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"MNO Enterprises" ;
+	ns2:jobEventCompany	ns26:this ;
+	ns2:jobPosition	"VicePresidentofSales" ;
+	ns2:positionStartDate	"2015-01-01"^^xsd:date .
+ns27:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"PQR Industries" ;
+	ns2:jobEventCompany	ns27:this ;
+	ns2:jobPosition	"DirectorOfMarketing" ;
+	ns2:positionStartDate	"2018-05-01"^^xsd:date .
+ns28:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"STU LLC" ;
+	ns2:jobEventCompany	ns28:this ;
+	ns2:jobPosition	"VicePresidentOfOperations" ;
+	ns2:positionStartDate	"2016-01-01"^^xsd:date .
+ns29:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"VWX Company" ;
+	ns2:jobEventCompany	ns29:this ;
+	ns2:jobPosition	"MarketingManager" , "SoftwareEngineer" ;
+	ns2:positionStartDate	"2019-05-01"^^xsd:date , "2021-01-01"^^xsd:date .
+ns30:this
+	rdf:type	ns2:Company ;
+	rdfs:label	"YZA Corporation" ;
+	ns2:jobEventCompany	ns30:this ;
+	ns2:jobPosition	"FinancialAnalyst" , "HumanResourcesManager" ;
+	ns2:positionStartDate	"2018-06-01"^^xsd:date , "2017-03-01"^^xsd:date .
+ns31:this
+	rdf:type	ns2:JobApplicant ;
+	ns2:jobEvent	ns32:job_event , ns33:job_event .
+ns34:this
+	rdf:type	ns2:JobApplicant ;
+	ns2:jobEvent	ns35:job_event .
+ns36:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Executive Officer @AceTech" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Executive_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:BusinessDevelopment , ns2:Leadership , ns2:StrategicPlanning .
+ns37:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Creative Officer @Innovative Ideas" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Creative_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:CreativeDesign , ns2:Branding .
+ns38:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Legal Officer @Nimbus Industries" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Legal_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:Legal , ns2:Compliance , ns2:ProjectManagement .
+ns39:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Business Development Officer @Global Network" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Business_Development_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:BusinessDevelopment , ns2:ProjectManagement .
+ns40:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Operating Officer @NovaCorp" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Operating_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:FinancialReporting , ns2:OperationsManagement , ns2:SupplyChainManagement .
+ns41:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Financial Officer @Sunrise Holdings" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Financial_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:Accounting , ns2:FinancialAnalysis , ns2:FinancialManagement .
+ns42:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Marketing Officer @BlueSky Enterprises" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Marketing_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:MarketingStrategy , ns2:Branding , ns2:MarketResearch .
+ns43:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Technology Officer @Peak Performance" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Technology_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:SoftwareDevelopment , ns2:DatabaseManagement , ns2:Object-OrientedProgramming .
+ns44:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Information Officer @Maxwell Dynamics" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Information_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:WebDevelopment , ns2:DatabaseManagement , ns2:UserExperienceDesign .
+ns45:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Human Resources Officer @Spectrum Group" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Human_Resources_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:Sales , ns2:TeamManagement , ns2:RelationshipBuilding .
+ns46:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Sales Officer @Golden Horizon" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Sales_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:Sales , ns2:SalesManagement .
+ns47:this
+	rdf:type	ns2:JobPosting ;
+	rdfs:label	"Chief Strategy Officer @Infinite Growth" ;
+	ns2:jobPostingCategory	ns2:Executive ;
+	ns2:jobPostingPosition	ns2:Chief_Strategy_Officer ;
+	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:StrategicPlanning , ns2:BusinessStrategy .
+ns17:job_event
 	rdf:type	ns2:JobEvent ;
 	rdfs:label	"Work Experience: Chief Executive Officer @ABC Corp" ;
 	ns2:id	1 ;
 	ns2:isCurrentPosition	"true" ;
-	ns2:jobEventCompany	ns20:this ;
+	ns2:jobEventCompany	ns21:this ;
 	ns2:jobPosition	ns2:ChiefExecutiveOfficer ;
 	ns2:positionStartDate	"2019-01-01"^^xsd:date ;
 	ns2:positionSummary	"As CEO of ABC Corp, I am responsible for driving overall growth and profitability of the organization." .
-ns17:job_event
+ns18:job_event
 	rdf:type	ns2:JobEvent ;
 	rdfs:label	"Work Experience: Chief Operating Officer @DEF Inc" ;
 	ns2:id	1 ;
 	ns2:isCurrentPosition	"false" ;
-	ns2:jobEventCompany	ns21:this ;
+	ns2:jobEventCompany	ns23:this ;
 	ns2:jobPosition	ns2:ChiefOperatingOfficer ;
 	ns2:positionEndDate	"2018-12-31"^^xsd:date ;
 	ns2:positionStartDate	"2017-01-01"^^xsd:date ;
 	ns2:positionSummary	"As COO of DEF Inc, I was responsible for driving operational excellence across the organization, including supply chain management and logistics." .
-ns18:job_event
+ns19:job_event
 	rdf:type	ns2:JobEvent ;
 	rdfs:label	"Work Experience: Chief Financial Officer @GHI LLC" ;
 	ns2:id	2 ;
 	ns2:isCurrentPosition	"true" ;
-	ns2:jobEventCompany	ns22:this ;
+	ns2:jobEventCompany	ns24:this ;
 	ns2:jobPosition	ns2:ChiefFinancialOfficer ;
 	ns2:positionStartDate	"2020-06-01"^^xsd:date ;
 	ns2:positionSummary	"As CFO of GHI LLC, I am responsible for overseeing all financial operations, including accounting, budgeting, and financial reporting." .
-ns19:job_event
+ns20:job_event
 	rdf:type	ns2:JobEvent ;
 	rdfs:label	"Work Experience: Chief Operating Officer @JKL Corporation" ;
 	ns2:id	2 ;
 	ns2:isCurrentPosition	"false" ;
-	ns2:jobEventCompany	ns23:this ;
+	ns2:jobEventCompany	ns25:this ;
 	ns2:jobPosition	ns2:ChiefOperatingOfficer ;
 	ns2:positionEndDate	"2020-05-31"^^xsd:date ;
 	ns2:positionStartDate	"2018-01-01"^^xsd:date ;
@@ -265,7 +405,7 @@ ns10:job_event
 	rdfs:label	"Work Experience: Vice President of Sales @MNO Enterprises" ;
 	ns2:id	3 ;
 	ns2:isCurrentPosition	"false" ;
-	ns2:jobEventCompany	ns24:this ;
+	ns2:jobEventCompany	ns26:this ;
 	ns2:jobPosition	ns2:VicePresidentofSales ;
 	ns2:positionEndDate	"2022-01-01"^^xsd:date ;
 	ns2:positionStartDate	"2015-01-01"^^xsd:date ;
@@ -275,7 +415,7 @@ ns11:job_event
 	rdfs:label	"Work Experience: Director of Marketing @PQR Industries" ;
 	ns2:id	4 ;
 	ns2:isCurrentPosition	"true" ;
-	ns2:jobEventCompany	ns25:this ;
+	ns2:jobEventCompany	ns27:this ;
 	ns2:jobPosition	ns2:DirectorOfMarketing ;
 	ns2:positionStartDate	"2018-05-01"^^xsd:date ;
 	ns2:positionSummary	"As Director of Marketing at PQR Industries, I am responsible for developing and executing the companys marketing strategy, including branding, advertising, and market research." .
@@ -284,177 +424,57 @@ ns12:job_event
 	rdfs:label	"Work Experience: Vice President of Operations @STU LLC" ;
 	ns2:id	4 ;
 	ns2:isCurrentPosition	"false" ;
-	ns2:jobEventCompany	ns26:this ;
+	ns2:jobEventCompany	ns28:this ;
 	ns2:jobPosition	ns2:VicePresidentOfOperations ;
 	ns2:positionEndDate	"2018-04-30"^^xsd:date ;
 	ns2:positionStartDate	"2016-01-01"^^xsd:date ;
 	ns2:positionSummary	"As Vice President of Operations at STU LLC, I was responsible for overseeing all day-to-day operations, including production, supply chain management, and logistics." .
 ns13:job_event
 	rdf:type	ns2:JobEvent ;
-	rdfs:label	"Work Experience: Software Engineer @VWX Company" , "Work Experience: Marketing Manager @VWX Company" ;
+	rdfs:label	"Work Experience: Software Engineer @VWX Company" ;
 	ns2:id	5 ;
-	ns2:isCurrentPosition	"false" , "true" ;
-	ns2:jobEventCompany	ns27:this ;
-	ns2:jobPosition	ns2:MarketingManager , ns2:SoftwareEngineer ;
-	ns2:positionEndDate	"2021-12-31"^^xsd:date ;
-	ns2:positionStartDate	"2019-05-01"^^xsd:date , "2021-01-01"^^xsd:date ;
-	ns2:positionSummary	"As a software engineer at VWX Company, I developed and maintained software applications for clients in the financial services industry." , "As Marketing Manager at VWX Company, I developed and executed marketing campaigns that increased brand awareness and drove sales growth." .
-ns28:job_event
-	rdf:type	ns2:JobEvent ;
-	rdfs:label	"Work Experience: Financial Analyst @YZA Corporation" , "Work Experience: Human Resources Manager @YZA Corporation" ;
-	ns2:id	6 ;
-	ns2:isCurrentPosition	"false" , "true" ;
+	ns2:isCurrentPosition	"true" ;
 	ns2:jobEventCompany	ns29:this ;
-	ns2:jobPosition	ns2:FinancialAnalyst , ns2:HumanResourcesManager ;
+	ns2:jobPosition	ns2:SoftwareEngineer ;
+	ns2:positionStartDate	"2021-01-01"^^xsd:date ;
+	ns2:positionSummary	"As a software engineer at VWX Company, I developed and maintained software applications for clients in the financial services industry." .
+ns14:job_event
+	rdf:type	ns2:JobEvent ;
+	rdfs:label	"Work Experience: Marketing Manager @VWX Company" ;
+	ns2:id	5 ;
+	ns2:isCurrentPosition	"false" ;
+	ns2:jobEventCompany	ns29:this ;
+	ns2:jobPosition	ns2:MarketingManager ;
+	ns2:positionEndDate	"2021-12-31"^^xsd:date ;
+	ns2:positionStartDate	"2019-05-01"^^xsd:date ;
+	ns2:positionSummary	"As Marketing Manager at VWX Company, I developed and executed marketing campaigns that increased brand awareness and drove sales growth." .
+ns32:job_event
+	rdf:type	ns2:JobEvent ;
+	rdfs:label	"Work Experience: Human Resources Manager @YZA Corporation" ;
+	ns2:id	6 ;
+	ns2:isCurrentPosition	"true" ;
+	ns2:jobEventCompany	ns30:this ;
+	ns2:jobPosition	ns2:HumanResourcesManager ;
+	ns2:positionStartDate	"2018-06-01"^^xsd:date ;
+	ns2:positionSummary	"As Human Resources Manager at YZA Corporation, I managed the recruitment, onboarding, and training of new employees, as well as employee relations and benefits administration." .
+ns33:job_event
+	rdf:type	ns2:JobEvent ;
+	rdfs:label	"Work Experience: Financial Analyst @YZA Corporation" ;
+	ns2:id	6 ;
+	ns2:isCurrentPosition	"false" ;
+	ns2:jobEventCompany	ns30:this ;
+	ns2:jobPosition	ns2:FinancialAnalyst ;
 	ns2:positionEndDate	"2019-08-31"^^xsd:date ;
-	ns2:positionStartDate	"2018-06-01"^^xsd:date , "2017-03-01"^^xsd:date ;
-	ns2:positionSummary	"As Financial Analyst at YZA Corporation, I performed financial modeling and analysis to support strategic decision-making and improve operational efficiency." , "As Human Resources Manager at YZA Corporation, I managed the recruitment, onboarding, and training of new employees, as well as employee relations and benefits administration." .
-ns30:job_event
+	ns2:positionStartDate	"2017-03-01"^^xsd:date ;
+	ns2:positionSummary	"As Financial Analyst at YZA Corporation, I performed financial modeling and analysis to support strategic decision-making and improve operational efficiency." .
+ns35:job_event
 	rdf:type	ns2:JobEvent ;
 	rdfs:label	"Work Experience: Project Manager @ABC Inc." ;
 	ns2:id	7 ;
 	ns2:isCurrentPosition	"true" ;
-	ns2:jobEventCompany	ns31:this ;
+	ns2:jobEventCompany	ns22:this ;
 	ns2:jobPosition	ns2:ProjectManager ;
 	ns2:positionStartDate	"2019-01-01"^^xsd:date ;
 	ns2:positionSummary	"As Project Manager at ABC Inc., I led cross-functional teams to plan and execute complex projects, ensuring on-time delivery and high-quality outcomes." .
-ns20:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"ABC Corp" ;
-	ns2:jobEventCompany	ns20:this ;
-	ns2:jobPosition	"ChiefExecutiveOfficer" ;
-	ns2:positionStartDate	"2019-01-01"^^xsd:date .
-ns31:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"ABC Inc." ;
-	ns2:jobEventCompany	ns31:this ;
-	ns2:jobPosition	"ProjectManager" ;
-	ns2:positionStartDate	"2019-01-01"^^xsd:date .
-ns21:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"DEF Inc" ;
-	ns2:jobEventCompany	ns21:this ;
-	ns2:jobPosition	"ChiefOperatingOfficer" ;
-	ns2:positionStartDate	"2017-01-01"^^xsd:date .
-ns22:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"GHI LLC" ;
-	ns2:jobEventCompany	ns22:this ;
-	ns2:jobPosition	"ChiefFinancialOfficer" ;
-	ns2:positionStartDate	"2020-06-01"^^xsd:date .
-ns23:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"JKL Corporation" ;
-	ns2:jobEventCompany	ns23:this ;
-	ns2:jobPosition	"ChiefOperatingOfficer" ;
-	ns2:positionStartDate	"2018-01-01"^^xsd:date .
-ns24:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"MNO Enterprises" ;
-	ns2:jobEventCompany	ns24:this ;
-	ns2:jobPosition	"VicePresidentofSales" ;
-	ns2:positionStartDate	"2015-01-01"^^xsd:date .
-ns25:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"PQR Industries" ;
-	ns2:jobEventCompany	ns25:this ;
-	ns2:jobPosition	"DirectorOfMarketing" ;
-	ns2:positionStartDate	"2018-05-01"^^xsd:date .
-ns26:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"STU LLC" ;
-	ns2:jobEventCompany	ns26:this ;
-	ns2:jobPosition	"VicePresidentOfOperations" ;
-	ns2:positionStartDate	"2016-01-01"^^xsd:date .
-ns27:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"VWX Company" ;
-	ns2:jobEventCompany	ns27:this ;
-	ns2:jobPosition	"MarketingManager" , "SoftwareEngineer" ;
-	ns2:positionStartDate	"2019-05-01"^^xsd:date , "2021-01-01"^^xsd:date .
-ns29:this
-	rdf:type	ns2:Company ;
-	rdfs:label	"YZA Corporation" ;
-	ns2:jobEventCompany	ns29:this ;
-	ns2:jobPosition	"FinancialAnalyst" , "HumanResourcesManager" ;
-	ns2:positionStartDate	"2018-06-01"^^xsd:date , "2017-03-01"^^xsd:date .
-ns32:this
-	rdf:type	ns2:JobApplicant ;
-	ns2:jobEvent	ns28:job_event .
-ns33:this
-	rdf:type	ns2:JobApplicant ;
-	ns2:jobEvent	ns30:job_event .
-ns34:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Executive Officer @AceTech" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Executive_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:BusinessDevelopment , ns2:Leadership , ns2:StrategicPlanning .
-ns35:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Creative Officer @Innovative Ideas" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Creative_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:CreativeDesign , ns2:Branding .
-ns36:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Legal Officer @Nimbus Industries" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Legal_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:Legal , ns2:Compliance , ns2:ProjectManagement .
-ns37:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Business Development Officer @Global Network" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Business_Development_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:BusinessDevelopment , ns2:ProjectManagement .
-ns38:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Operating Officer @NovaCorp" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Operating_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:FinancialReporting , ns2:OperationsManagement , ns2:SupplyChainManagement .
-ns39:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Financial Officer @Sunrise Holdings" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Financial_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:Accounting , ns2:FinancialAnalysis , ns2:FinancialManagement .
-ns40:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Marketing Officer @BlueSky Enterprises" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Marketing_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:MarketingStrategy , ns2:Branding , ns2:MarketResearch .
-ns41:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Technology Officer @Peak Performance" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Technology_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:SoftwareDevelopment , ns2:DatabaseManagement , ns2:Object-OrientedProgramming .
-ns42:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Information Officer @Maxwell Dynamics" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Information_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:WebDevelopment , ns2:DatabaseManagement , ns2:UserExperienceDesign .
-ns43:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Human Resources Officer @Spectrum Group" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Human_Resources_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:Sales , ns2:TeamManagement , ns2:RelationshipBuilding .
-ns44:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Sales Officer @Golden Horizon" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Sales_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:Sales , ns2:SalesManagement .
-ns45:this
-	rdf:type	ns2:JobPosting ;
-	rdfs:label	"Chief Strategy Officer @Infinite Growth" ;
-	ns2:jobPostingCategory	ns2:Executive ;
-	ns2:jobPostingPosition	ns2:Chief_Strategy_Officer ;
-	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:StrategicPlanning , ns2:BusinessStrategy .
 
-    ## Turtle End ##
+## TURTLE END ##

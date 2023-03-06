@@ -1,5 +1,3 @@
-## TURTLE START ##
-
 @prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ns1:	<http://demo.openlinksw.com/demo/recruitment/applicant/1#> .
 @prefix ns2:	<http://www.openlinksw.com/ontology/recruitment#> .
@@ -61,7 +59,7 @@ ns5:education
 	ns2:hasEducationDegreeEarned	ns2:Bachelor_of_Science ;
 	ns2:hasEducationEndDate	"2014-05-01"^^xsd:date ;
 	ns2:hasEducationFieldOfStudy	<http://www.openlinksw.com/ontology/recruitment#Computer%20Science> ;
-	ns2:hasEducationLocation	<http://dbpedia.org/resource/Massachusetts_Institute_of_Technology_%28MIT%29> ;
+	ns2:hasEducationLocation	dbpedia:Massachusetts_Institute_of_Technology ;
 	ns2:isEducationCompleted	"true" .
 ns6:education
 	rdf:type	ns2:EducationEvent ;
@@ -77,7 +75,7 @@ ns7:education
 	ns2:hasEducationDegreeEarned	ns2:Bachelor_of_Arts ;
 	ns2:hasEducationEndDate	"2012-05-01"^^xsd:date ;
 	ns2:hasEducationFieldOfStudy	ns2:Marketing ;
-	ns2:hasEducationLocation	<http://dbpedia.org/resource/University_of_California%2CLos_Angeles%28UCLA%29> ;
+	ns2:hasEducationLocation	<http://dbpedia.org/resource/University_of_California%2C_Los_Angeles> ;
 	ns2:isEducationCompleted	"true" .
 ns8:education
 	rdf:type	ns2:EducationEvent ;
@@ -456,5 +454,3 @@ ns45:this
 	ns2:jobPostingCategory	ns2:Executive ;
 	ns2:jobPostingPosition	ns2:Chief_Strategy_Officer ;
 	ns2:jobPostingRequiredSkill	ns2:Marketing , ns2:StrategicPlanning , ns2:BusinessStrategy .
-
-    ## TURTLE END ##

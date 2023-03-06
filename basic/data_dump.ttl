@@ -1,0 +1,725 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/1/skill_class/BusinessDevelopment#> .
+@prefix ns2:	<http://demo.openlinksw.com/schemas/recruitment_demo_generated/> .
+@prefix ns3:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/1/skill_class/FinancialAnalysis#> .
+@prefix ns4:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/1/skill_class/Leadership#> .
+@prefix ns5:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/1/skill_class/Sales#> .
+@prefix ns6:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/1/skill_class/StrategicPlanning#> .
+@prefix ns7:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/1/skill_class/TeamManagement#> .
+@prefix ns8:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/2/skill_class/Accounting#> .
+@prefix ns9:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/2/skill_class/Budgeting#> .
+@prefix ns10:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/2/skill_class/FinancialManagement#> .
+@prefix ns11:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/2/skill_class/FinancialReporting#> .
+@prefix ns12:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/2/skill_class/OperationsManagement#> .
+@prefix ns13:	<http://demo.openlinksw.com/rq_test/applicant_skills/applicant_id/2/skill_class/SupplyChainManagement#> .
+@prefix ns14:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/1/language/English#> .
+@prefix ns15:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/1/language/French#> .
+@prefix ns16:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/1/language/Spanish#> .
+@prefix ns17:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/2/language/English#> .
+@prefix ns18:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/2/language/German#> .
+@prefix ns19:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/3/language/English#> .
+@prefix ns20:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/3/language/Mandarin#> .
+@prefix ns21:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/4/language/English#> .
+@prefix ns22:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/4/language/Spanish#> .
+@prefix ns23:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/5/language/English#> .
+@prefix ns24:	<http://demo.openlinksw.com/rq_test/applicant_languages/applicant_id/5/language/Portuguese#> .
+@prefix ns25:	<http://demo.openlinksw.com/rq_test/applicant_certifications/id/1#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix ns27:	<http://demo.openlinksw.com/rq_test/applicant_certifications/id/2#> .
+@prefix ns28:	<http://demo.openlinksw.com/rq_test/applicant_certifications/id/3#> .
+@prefix ns29:	<http://demo.openlinksw.com/rq_test/applicant_certifications/id/4#> .
+@prefix ns30:	<http://demo.openlinksw.com/rq_test/applicant_certifications/id/5#> .
+@prefix ns31:	<http://demo.openlinksw.com/rq_test/job_postings/id/1/company_class/AceTech#> .
+@prefix ns32:	<http://demo.openlinksw.com/rq_test/job_postings/id/10/company_class/InnovativeIdeas#> .
+@prefix ns33:	<http://demo.openlinksw.com/rq_test/job_postings/id/11/company_class/NimbusIndustries#> .
+@prefix ns34:	<http://demo.openlinksw.com/rq_test/job_postings/id/12/company_class/GlobalNetwork#> .
+@prefix ns35:	<http://demo.openlinksw.com/rq_test/job_postings/id/2/company_class/NovaCorp#> .
+@prefix ns36:	<http://demo.openlinksw.com/rq_test/job_postings/id/3/company_class/SunriseHoldings#> .
+@prefix ns37:	<http://demo.openlinksw.com/rq_test/job_postings/id/4/company_class/BlueSkyEnterprises#> .
+@prefix ns38:	<http://demo.openlinksw.com/rq_test/job_postings/id/5/company_class/PeakPerformance#> .
+@prefix ns39:	<http://demo.openlinksw.com/rq_test/job_postings/id/6/company_class/MaxwellDynamics#> .
+@prefix ns40:	<http://demo.openlinksw.com/rq_test/job_postings/id/7/company_class/SpectrumGroup#> .
+@prefix ns41:	<http://demo.openlinksw.com/rq_test/job_postings/id/8/company_class/GoldenHorizon#> .
+@prefix ns42:	<http://demo.openlinksw.com/rq_test/job_postings/id/9/company_class/InfiniteGrowth#> .
+@prefix ns43:	<http://demo.openlinksw.com/rq_test/applicant_education/id/1#> .
+@prefix ns44:	<http://demo.openlinksw.com/rq_test/applicant_education/id/2#> .
+@prefix ns45:	<http://demo.openlinksw.com/rq_test/applicant_education/id/3#> .
+@prefix ns46:	<http://demo.openlinksw.com/rq_test/applicant_education/id/4#> .
+@prefix ns47:	<http://demo.openlinksw.com/rq_test/applicant_education/id/5#> .
+@prefix ns48:	<http://demo.openlinksw.com/rq_test/applicants/applicant_id/1#> .
+@prefix ns49:	<http://demo.openlinksw.com/rq_test/applicants/applicant_id/2#> .
+@prefix ns50:	<http://demo.openlinksw.com/rq_test/applicants/applicant_id/3#> .
+@prefix ns51:	<http://demo.openlinksw.com/rq_test/applicants/applicant_id/4#> .
+@prefix ns52:	<http://demo.openlinksw.com/rq_test/applicants/applicant_id/5#> .
+@prefix ns53:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/1/positions_company_uri/ABCCorp/id/1#> .
+@prefix ns54:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/1/positions_company_uri/DEFInc/id/2#> .
+@prefix ns55:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/2/positions_company_uri/GHILLC/id/3#> .
+@prefix ns56:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/2/positions_company_uri/JKLCorporation/id/4#> .
+@prefix ns57:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/3/positions_company_uri/MNOEnterprises/id/5#> .
+@prefix ns58:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/4/positions_company_uri/PQRIndustries/id/6#> .
+@prefix ns59:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/4/positions_company_uri/STULLC/id/7#> .
+@prefix ns60:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/5/positions_company_uri/VWXCompany/id/8#> .
+@prefix ns61:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/5/positions_company_uri/VWXCompany/id/9#> .
+@prefix ns62:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/6/positions_company_uri/YZACorporation/id/10#> .
+@prefix ns63:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/6/positions_company_uri/YZACorporation/id/11#> .
+@prefix ns64:	<http://demo.openlinksw.com/rq_test/applicant_positions/applicant_id/7/positions_company_uri/ABCInc/id/12#> .
+
+ns1:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	3 ;
+	ns2:applicant_id	1 ;
+	ns2:skill_class	"BusinessDevelopment" ;
+	ns2:skill_name	"Business Development" ;
+	ns2:skill_level	"Intermediate" .
+ns3:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	6 ;
+	ns2:applicant_id	1 ;
+	ns2:skill_class	"FinancialAnalysis" ;
+	ns2:skill_name	"Financial Analysis" ;
+	ns2:skill_level	"Intermediate" .
+ns4:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	1 ;
+	ns2:applicant_id	1 ;
+	ns2:skill_class	"Leadership" ;
+	ns2:skill_name	"Leadership" ;
+	ns2:skill_level	"Advanced" .
+ns5:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	4 ;
+	ns2:applicant_id	1 ;
+	ns2:skill_class	"Sales" ;
+	ns2:skill_name	"Sales" ;
+	ns2:skill_level	"Intermediate" .
+ns6:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	2 ;
+	ns2:applicant_id	1 ;
+	ns2:skill_class	"StrategicPlanning" ;
+	ns2:skill_name	"Strategic Planning" ;
+	ns2:skill_level	"Advanced" .
+ns7:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	5 ;
+	ns2:applicant_id	1 ;
+	ns2:skill_class	"TeamManagement" ;
+	ns2:skill_name	"Team Management" ;
+	ns2:skill_level	"Advanced" .
+ns8:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	9 ;
+	ns2:applicant_id	2 ;
+	ns2:skill_class	"Accounting" ;
+	ns2:skill_name	"Accounting" ;
+	ns2:skill_level	"Advanced" .
+ns9:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	8 ;
+	ns2:applicant_id	2 ;
+	ns2:skill_class	"Budgeting" ;
+	ns2:skill_name	"Budgeting" ;
+	ns2:skill_level	"Advanced" .
+ns10:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	10 ;
+	ns2:applicant_id	2 ;
+	ns2:skill_class	"FinancialManagement" ;
+	ns2:skill_name	"Financial Management" ;
+	ns2:skill_level	"Intermediate" .
+ns11:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	7 ;
+	ns2:applicant_id	2 ;
+	ns2:skill_class	"FinancialReporting" ;
+	ns2:skill_name	"Financial Reporting" ;
+	ns2:skill_level	"Advanced" .
+ns12:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	11 ;
+	ns2:applicant_id	2 ;
+	ns2:skill_class	"OperationsManagement" ;
+	ns2:skill_name	"Operations Management" ;
+	ns2:skill_level	"Intermediate" .
+ns13:this
+	rdf:type	ns2:applicant_skills ;
+	ns2:id	12 ;
+	ns2:applicant_id	2 ;
+	ns2:skill_class	"SupplyChainManagement" ;
+	ns2:skill_name	"Supply Chain Management" ;
+	ns2:skill_level	"Intermediate" .
+ns14:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	1 ;
+	ns2:applicant_id	1 ;
+	ns2:language	"English" ;
+	ns2:proficiency	"Fluent" .
+ns15:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	2 ;
+	ns2:applicant_id	1 ;
+	ns2:language	"French" ;
+	ns2:proficiency	"Intermediate" .
+ns16:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	3 ;
+	ns2:applicant_id	1 ;
+	ns2:language	"Spanish" ;
+	ns2:proficiency	"Beginner" .
+ns17:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	4 ;
+	ns2:applicant_id	2 ;
+	ns2:language	"English" ;
+	ns2:proficiency	"Native" .
+ns18:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	5 ;
+	ns2:applicant_id	2 ;
+	ns2:language	"German" ;
+	ns2:proficiency	"Advanced" .
+ns19:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	6 ;
+	ns2:applicant_id	3 ;
+	ns2:language	"English" ;
+	ns2:proficiency	"Fluent" .
+ns20:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	7 ;
+	ns2:applicant_id	3 ;
+	ns2:language	"Mandarin" ;
+	ns2:proficiency	"Intermediate" .
+ns21:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	8 ;
+	ns2:applicant_id	4 ;
+	ns2:language	"English" ;
+	ns2:proficiency	"Native" .
+ns22:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	9 ;
+	ns2:applicant_id	4 ;
+	ns2:language	"Spanish" ;
+	ns2:proficiency	"Intermediate" .
+ns23:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	10 ;
+	ns2:applicant_id	5 ;
+	ns2:language	"English" ;
+	ns2:proficiency	"Advanced" .
+ns24:this
+	rdf:type	ns2:applicant_languages ;
+	ns2:id	11 ;
+	ns2:applicant_id	5 ;
+	ns2:language	"Portuguese" ;
+	ns2:proficiency	"Intermediate" .
+ns25:this
+	rdf:type	ns2:applicant_certifications ;
+	ns2:id	1 ;
+	ns2:certifications_name	"Certified Business Analysis Professional (CBAP)" ;
+	ns2:certifications_authority	"International Institute of Business Analysis (IIBA)" ;
+	ns2:certifications_date	"2021-06-01"^^xsd:date .
+ns27:this
+	rdf:type	ns2:applicant_certifications ;
+	ns2:id	2 ;
+	ns2:certifications_name	"Project Management Professional (PMP)" ;
+	ns2:certifications_authority	"Project Management Institute (PMI)" ;
+	ns2:certifications_date	"2020-01-01"^^xsd:date .
+ns28:this
+	rdf:type	ns2:applicant_certifications ;
+	ns2:id	3 ;
+	ns2:certifications_name	"Professional Scrum Master I" ;
+	ns2:certifications_authority	"Scrum.org" ;
+	ns2:certifications_date	"2019-02-01"^^xsd:date .
+ns29:this
+	rdf:type	ns2:applicant_certifications ;
+	ns2:id	4 ;
+	ns2:certifications_name	"Microsoft Certified: Azure Solutions Architect Expert" ;
+	ns2:certifications_authority	"Microsoft" ;
+	ns2:certifications_date	"2021-01-01"^^xsd:date .
+ns30:this
+	rdf:type	ns2:applicant_certifications ;
+	ns2:id	5 ;
+	ns2:certifications_name	"Certified Information Systems Security Professional (CISSP)" ;
+	ns2:certifications_authority	"International Information System Security Certification Consortium (ISC)\u00B2" ;
+	ns2:certifications_date	"2022-01-01"^^xsd:date .
+ns31:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	1 ;
+	ns2:company	"AceTech" ;
+	ns2:company_class	"AceTech" ;
+	ns2:title	"Chief Executive Officer" ;
+	ns2:title_dbpedia	"ChiefExecutiveOfficer" ;
+	ns2:title_class	"Chief_Executive_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"San Francisco" ;
+	ns2:skill_1	"Leadership" ;
+	ns2:skill_2	"Strategic Planning" ;
+	ns2:skill_3	"Business Development" ;
+	ns2:skill_1_class	"Leadership" ;
+	ns2:skill_2_class	"StrategicPlanning" ;
+	ns2:skill_3_class	"BusinessDevelopment" .
+ns32:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	10 ;
+	ns2:company	"Innovative Ideas" ;
+	ns2:company_class	"InnovativeIdeas" ;
+	ns2:title	"Chief Creative Officer" ;
+	ns2:title_dbpedia	"ChiefCreativeOfficer" ;
+	ns2:title_class	"Chief_Creative_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"San Diego" ;
+	ns2:skill_1	"Creative Design" ;
+	ns2:skill_2	"Marketing" ;
+	ns2:skill_3	"Branding" ;
+	ns2:skill_1_class	"CreativeDesign" ;
+	ns2:skill_2_class	"Marketing" ;
+	ns2:skill_3_class	"Branding" .
+ns33:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	11 ;
+	ns2:company	"Nimbus Industries" ;
+	ns2:company_class	"NimbusIndustries" ;
+	ns2:title	"Chief Legal Officer" ;
+	ns2:title_dbpedia	"ChiefLegalOfficer" ;
+	ns2:title_class	"Chief_Legal_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Detroit" ;
+	ns2:skill_1	"Legal" ;
+	ns2:skill_2	"Compliance" ;
+	ns2:skill_3	"Project Management" ;
+	ns2:skill_1_class	"Legal" ;
+	ns2:skill_2_class	"Compliance" ;
+	ns2:skill_3_class	"ProjectManagement" .
+ns34:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	12 ;
+	ns2:company	"Global Network" ;
+	ns2:company_class	"GlobalNetwork" ;
+	ns2:title	"Chief Business Development Officer" ;
+	ns2:title_dbpedia	"ChiefBusinessDevelopmentOfficer" ;
+	ns2:title_class	"Chief_Business_Development_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Houston" ;
+	ns2:skill_1	"Business Development" ;
+	ns2:skill_2	"Marketing" ;
+	ns2:skill_3	"Project Management" ;
+	ns2:skill_1_class	"BusinessDevelopment" ;
+	ns2:skill_2_class	"Marketing" ;
+	ns2:skill_3_class	"ProjectManagement" .
+ns35:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	2 ;
+	ns2:company	"NovaCorp" ;
+	ns2:company_class	"NovaCorp" ;
+	ns2:title	"Chief Operating Officer" ;
+	ns2:title_dbpedia	"ChiefOperatingOfficer" ;
+	ns2:title_class	"Chief_Operating_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"New York" ;
+	ns2:skill_1	"Operations Management" ;
+	ns2:skill_2	"Financial Reporting" ;
+	ns2:skill_3	"Supply Chain Management" ;
+	ns2:skill_1_class	"OperationsManagement" ;
+	ns2:skill_2_class	"FinancialReporting" ;
+	ns2:skill_3_class	"SupplyChainManagement" .
+ns36:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	3 ;
+	ns2:company	"Sunrise Holdings" ;
+	ns2:company_class	"SunriseHoldings" ;
+	ns2:title	"Chief Financial Officer" ;
+	ns2:title_dbpedia	"ChiefFinancialOfficer" ;
+	ns2:title_class	"Chief_Financial_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Los Angeles" ;
+	ns2:skill_1	"Financial Analysis" ;
+	ns2:skill_2	"Accounting" ;
+	ns2:skill_3	"Financial Management" ;
+	ns2:skill_1_class	"FinancialAnalysis" ;
+	ns2:skill_2_class	"Accounting" ;
+	ns2:skill_3_class	"FinancialManagement" .
+ns37:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	4 ;
+	ns2:company	"BlueSky Enterprises" ;
+	ns2:company_class	"BlueSkyEnterprises" ;
+	ns2:title	"Chief Marketing Officer" ;
+	ns2:title_dbpedia	"ChiefMarketingOfficer" ;
+	ns2:title_class	"Chief_Marketing_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Chicago" ;
+	ns2:skill_1	"Marketing Strategy" ;
+	ns2:skill_2	"Branding" ;
+	ns2:skill_3	"Market Research" ;
+	ns2:skill_1_class	"MarketingStrategy" ;
+	ns2:skill_2_class	"Branding" ;
+	ns2:skill_3_class	"MarketResearch" .
+ns38:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	5 ;
+	ns2:company	"Peak Performance" ;
+	ns2:company_class	"PeakPerformance" ;
+	ns2:title	"Chief Technology Officer" ;
+	ns2:title_dbpedia	"ChiefTechnologyOfficer" ;
+	ns2:title_class	"Chief_Technology_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Seattle" ;
+	ns2:skill_1	"Software Development" ;
+	ns2:skill_2	"Object-Oriented Programming" ;
+	ns2:skill_3	"Database Management" ;
+	ns2:skill_1_class	"SoftwareDevelopment" ;
+	ns2:skill_2_class	"Object-OrientedProgramming" ;
+	ns2:skill_3_class	"DatabaseManagement" .
+ns39:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	6 ;
+	ns2:company	"Maxwell Dynamics" ;
+	ns2:company_class	"MaxwellDynamics" ;
+	ns2:title	"Chief Information Officer" ;
+	ns2:title_dbpedia	"ChiefInformationOfficer" ;
+	ns2:title_class	"Chief_Information_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Dallas" ;
+	ns2:skill_1	"Web Development" ;
+	ns2:skill_2	"Database Management" ;
+	ns2:skill_3	"User Experience Design" ;
+	ns2:skill_1_class	"WebDevelopment" ;
+	ns2:skill_2_class	"DatabaseManagement" ;
+	ns2:skill_3_class	"UserExperienceDesign" .
+ns40:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	7 ;
+	ns2:company	"Spectrum Group" ;
+	ns2:company_class	"SpectrumGroup" ;
+	ns2:title	"Chief Human Resources Officer" ;
+	ns2:title_dbpedia	"ChiefHumanResourcesOfficer" ;
+	ns2:title_class	"Chief_Human_Resources_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Denver" ;
+	ns2:skill_1	"Team Management" ;
+	ns2:skill_2	"Relationship Building" ;
+	ns2:skill_3	"Sales" ;
+	ns2:skill_1_class	"TeamManagement" ;
+	ns2:skill_2_class	"RelationshipBuilding" ;
+	ns2:skill_3_class	"Sales" .
+ns41:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	8 ;
+	ns2:company	"Golden Horizon" ;
+	ns2:company_class	"GoldenHorizon" ;
+	ns2:title	"Chief Sales Officer" ;
+	ns2:title_dbpedia	"ChiefSalesOfficer" ;
+	ns2:title_class	"Chief_Sales_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Miami" ;
+	ns2:skill_1	"Sales" ;
+	ns2:skill_2	"Sales Management" ;
+	ns2:skill_3	"Marketing" ;
+	ns2:skill_1_class	"Sales" ;
+	ns2:skill_2_class	"SalesManagement" ;
+	ns2:skill_3_class	"Marketing" .
+ns42:this
+	rdf:type	ns2:job_postings ;
+	ns2:id	9 ;
+	ns2:company	"Infinite Growth" ;
+	ns2:company_class	"InfiniteGrowth" ;
+	ns2:title	"Chief Strategy Officer" ;
+	ns2:title_dbpedia	"ChiefStrategyOfficer" ;
+	ns2:title_class	"Chief_Strategy_Officer" ;
+	ns2:category	"Executive" ;
+	ns2:employment_type	"Full-Time" ;
+	ns2:location	"Phoenix" ;
+	ns2:skill_1	"Business Strategy" ;
+	ns2:skill_2	"Strategic Planning" ;
+	ns2:skill_3	"Marketing" ;
+	ns2:skill_1_class	"BusinessStrategy" ;
+	ns2:skill_2_class	"StrategicPlanning" ;
+	ns2:skill_3_class	"Marketing" .
+ns43:this
+	rdf:type	ns2:applicant_education ;
+	ns2:id	1 ;
+	ns2:education_school_name	"Harvard University" ;
+	ns2:education_school_name_uri	"Harvard_University" ;
+	ns2:education_degree	"MBA" ;
+	ns2:education_degree_uri	"MBA" ;
+	ns2:education_field_of_study	"Business Administration" ;
+	ns2:education_field_of_study_uri	"Business_Administration" ;
+	ns2:education_start_date	"2015-09-01"^^xsd:date ;
+	ns2:education_end_date	"2017-05-01"^^xsd:date ;
+	ns2:education_is_completed	"true" .
+ns44:this
+	rdf:type	ns2:applicant_education ;
+	ns2:id	2 ;
+	ns2:education_school_name	"Massachusetts Institute of Technology (MIT)" ;
+	ns2:education_school_name_uri	"Massachusetts_Institute_of_Technology" ;
+	ns2:education_degree	"Bachelor of Science" ;
+	ns2:education_degree_uri	"Bachelor_of_Science" ;
+	ns2:education_field_of_study	"Computer Science" ;
+	ns2:education_field_of_study_uri	"Computer_Science" ;
+	ns2:education_start_date	"2010-09-01"^^xsd:date ;
+	ns2:education_end_date	"2014-05-01"^^xsd:date ;
+	ns2:education_is_completed	"true" .
+ns45:this
+	rdf:type	ns2:applicant_education ;
+	ns2:id	3 ;
+	ns2:education_school_name	"Stanford University" ;
+	ns2:education_school_name_uri	"Stanford_University" ;
+	ns2:education_degree	"MBA" ;
+	ns2:education_degree_uri	"MBA" ;
+	ns2:education_field_of_study	"Business Administration" ;
+	ns2:education_field_of_study_uri	"Business_Administration" ;
+	ns2:education_start_date	"2012-09-01"^^xsd:date ;
+	ns2:education_end_date	"2014-05-01"^^xsd:date ;
+	ns2:education_is_completed	"true" .
+ns46:this
+	rdf:type	ns2:applicant_education ;
+	ns2:id	4 ;
+	ns2:education_school_name	"University of California, Los Angeles (UCLA)" ;
+	ns2:education_school_name_uri	"University_of_California,_Los_Angeles" ;
+	ns2:education_degree	"Bachelor of Arts" ;
+	ns2:education_degree_uri	"Bachelor_of_Arts" ;
+	ns2:education_field_of_study	"Marketing" ;
+	ns2:education_field_of_study_uri	"Marketing" ;
+	ns2:education_start_date	"2008-09-01"^^xsd:date ;
+	ns2:education_end_date	"2012-05-01"^^xsd:date ;
+	ns2:education_is_completed	"true" .
+ns47:this
+	rdf:type	ns2:applicant_education ;
+	ns2:id	5 ;
+	ns2:education_school_name	"Columbia University" ;
+	ns2:education_school_name_uri	"Columbia_University" ;
+	ns2:education_degree	"Bachelor of Science" ;
+	ns2:education_degree_uri	"Bachelor_of_Science" ;
+	ns2:education_field_of_study	"Computer Science" ;
+	ns2:education_field_of_study_uri	"Computer_Science" ;
+	ns2:education_start_date	"2017-09-01"^^xsd:date ;
+	ns2:education_end_date	"2021-05-01"^^xsd:date ;
+	ns2:education_is_completed	"true" .
+ns48:this
+	rdf:type	ns2:applicants ;
+	ns2:applicant_id	1 ;
+	ns2:first_name	"John" ;
+	ns2:last_name	"Doe" ;
+	ns2:email	"johndoe@email.com" ;
+	ns2:phone_number	"(23)-56-7890" ;
+	ns2:street_address	"123 Main St" ;
+	ns2:city	"Springfield" ;
+	ns2:state	"IL" ;
+	ns2:zip_code	"12345" ;
+	ns2:location_uri	"Springfield_Illinois" ;
+	ns2:state_uri	"Illinois" .
+ns49:this
+	rdf:type	ns2:applicants ;
+	ns2:applicant_id	2 ;
+	ns2:first_name	"Jane" ;
+	ns2:last_name	"Smith" ;
+	ns2:email	"janesmith@email.com" ;
+	ns2:phone_number	"555-555-5555" ;
+	ns2:street_address	"456 Oak St" ;
+	ns2:city	"Chicago" ;
+	ns2:state	"IL" ;
+	ns2:zip_code	"54321" ;
+	ns2:location_uri	"Chicago_Illinois" ;
+	ns2:state_uri	"Illinois" .
+ns50:this
+	rdf:type	ns2:applicants ;
+	ns2:applicant_id	3 ;
+	ns2:first_name	"Michael" ;
+	ns2:last_name	"Johnson" ;
+	ns2:email	"michaelj@example.com" ;
+	ns2:phone_number	"123-123-1234" ;
+	ns2:street_address	"789 Maple Ave" ;
+	ns2:city	"Madison" ;
+	ns2:state	"WI" ;
+	ns2:zip_code	"67890" ;
+	ns2:location_uri	"Madison_Wisconsin" ;
+	ns2:state_uri	"Wisconsin" .
+ns51:this
+	rdf:type	ns2:applicants ;
+	ns2:applicant_id	4 ;
+	ns2:first_name	"Sarah" ;
+	ns2:last_name	"Williams" ;
+	ns2:email	"sarahw@example.com" ;
+	ns2:phone_number	"555-123-4567" ;
+	ns2:street_address	"1010 Elm St" ;
+	ns2:city	"New York" ;
+	ns2:state	"NY" ;
+	ns2:zip_code	"54321" ;
+	ns2:location_uri	"New_York_City" ;
+	ns2:state_uri	"New_York" .
+ns52:this
+	rdf:type	ns2:applicants ;
+	ns2:applicant_id	5 ;
+	ns2:first_name	"David" ;
+	ns2:last_name	"Lee" ;
+	ns2:email	"davidlee@example.com" ;
+	ns2:phone_number	"555-789-1234" ;
+	ns2:street_address	"1212 Pine St" ;
+	ns2:city	"Los Angeles" ;
+	ns2:state	"CA" ;
+	ns2:zip_code	"98765" ;
+	ns2:location_uri	"Los_Angeles_California" ;
+	ns2:state_uri	"California" .
+ns53:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	1 ;
+	ns2:applicant_id	1 ;
+	ns2:positions_company_name	"ABC Corp" ;
+	ns2:positions_company_uri	"ABCCorp" ;
+	ns2:positions_title	"Chief Executive Officer" ;
+	ns2:positions_title_uri	"ChiefExecutiveOfficer" ;
+	ns2:positions_startdate	"2019-01-01"^^xsd:date ;
+	ns2:positions_iscurrent	"true" ;
+	ns2:positions_summary	"As CEO of ABC Corp, I am responsible for driving overall growth and profitability of the organization." ;
+	ns2:positions_duration_years	3 .
+ns54:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	2 ;
+	ns2:applicant_id	1 ;
+	ns2:positions_company_name	"DEF Inc" ;
+	ns2:positions_company_uri	"DEFInc" ;
+	ns2:positions_title	"Chief Operating Officer" ;
+	ns2:positions_title_uri	"ChiefOperatingOfficer" ;
+	ns2:positions_startdate	"2017-01-01"^^xsd:date ;
+	ns2:positions_enddate	"2018-12-31"^^xsd:date ;
+	ns2:positions_iscurrent	"false" ;
+	ns2:positions_summary	"As COO of DEF Inc, I was responsible for driving operational excellence across the organization, including supply chain management and logistics." ;
+	ns2:positions_duration_years	2 .
+ns55:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	3 ;
+	ns2:applicant_id	2 ;
+	ns2:positions_company_name	"GHI LLC" ;
+	ns2:positions_company_uri	"GHILLC" ;
+	ns2:positions_title	"Chief Financial Officer" ;
+	ns2:positions_title_uri	"ChiefFinancialOfficer" ;
+	ns2:positions_startdate	"2020-06-01"^^xsd:date ;
+	ns2:positions_iscurrent	"true" ;
+	ns2:positions_summary	"As CFO of GHI LLC, I am responsible for overseeing all financial operations, including accounting, budgeting, and financial reporting." ;
+	ns2:positions_duration_years	1 .
+ns56:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	4 ;
+	ns2:applicant_id	2 ;
+	ns2:positions_company_name	"JKL Corporation" ;
+	ns2:positions_company_uri	"JKLCorporation" ;
+	ns2:positions_title	"Chief Operating Officer" ;
+	ns2:positions_title_uri	"ChiefOperatingOfficer" ;
+	ns2:positions_startdate	"2018-01-01"^^xsd:date ;
+	ns2:positions_enddate	"2020-05-31"^^xsd:date ;
+	ns2:positions_iscurrent	"false" ;
+	ns2:positions_summary	"As COO of JKL Corporation, I was responsible for ensuring operational efficiency and driving growth across the organization." ;
+	ns2:positions_duration_years	2 .
+ns57:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	5 ;
+	ns2:applicant_id	3 ;
+	ns2:positions_company_name	"MNO Enterprises" ;
+	ns2:positions_company_uri	"MNOEnterprises" ;
+	ns2:positions_title	"Vice President of Sales" ;
+	ns2:positions_title_uri	"VicePresidentofSales" ;
+	ns2:positions_startdate	"2015-01-01"^^xsd:date ;
+	ns2:positions_enddate	"2022-01-01"^^xsd:date ;
+	ns2:positions_iscurrent	"false" ;
+	ns2:positions_summary	"As Vice President of Sales at MNO Enterprises, I was responsible for driving revenue growth through strategic partnerships and effective sales team management." ;
+	ns2:positions_duration_years	7 .
+ns58:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	6 ;
+	ns2:applicant_id	4 ;
+	ns2:positions_company_name	"PQR Industries" ;
+	ns2:positions_company_uri	"PQRIndustries" ;
+	ns2:positions_title	"Director of Marketing" ;
+	ns2:positions_title_uri	"DirectorOfMarketing" ;
+	ns2:positions_startdate	"2018-05-01"^^xsd:date ;
+	ns2:positions_iscurrent	"true" ;
+	ns2:positions_summary	"As Director of Marketing at PQR Industries, I am responsible for developing and executing the companys marketing strategy, including branding, advertising, and market research." ;
+	ns2:positions_duration_years	3 .
+ns59:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	7 ;
+	ns2:applicant_id	4 ;
+	ns2:positions_company_name	"STU LLC" ;
+	ns2:positions_company_uri	"STULLC" ;
+	ns2:positions_title	"Vice President of Operations" ;
+	ns2:positions_title_uri	"VicePresidentOfOperations" ;
+	ns2:positions_startdate	"2016-01-01"^^xsd:date ;
+	ns2:positions_enddate	"2018-04-30"^^xsd:date ;
+	ns2:positions_iscurrent	"false" ;
+	ns2:positions_summary	"As Vice President of Operations at STU LLC, I was responsible for overseeing all day-to-day operations, including production, supply chain management, and logistics." ;
+	ns2:positions_duration_years	2 .
+ns60:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	8 ;
+	ns2:applicant_id	5 ;
+	ns2:positions_company_name	"VWX Company" ;
+	ns2:positions_company_uri	"VWXCompany" ;
+	ns2:positions_title	"Software Engineer" ;
+	ns2:positions_title_uri	"SoftwareEngineer" ;
+	ns2:positions_startdate	"2021-01-01"^^xsd:date ;
+	ns2:positions_iscurrent	"true" ;
+	ns2:positions_summary	"As a software engineer at VWX Company, I developed and maintained software applications for clients in the financial services industry." ;
+	ns2:positions_duration_years	5 .
+ns61:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	9 ;
+	ns2:applicant_id	5 ;
+	ns2:positions_company_name	"VWX Company" ;
+	ns2:positions_company_uri	"VWXCompany" ;
+	ns2:positions_title	"Marketing Manager" ;
+	ns2:positions_title_uri	"MarketingManager" ;
+	ns2:positions_startdate	"2019-05-01"^^xsd:date ;
+	ns2:positions_enddate	"2021-12-31"^^xsd:date ;
+	ns2:positions_iscurrent	"false" ;
+	ns2:positions_summary	"As Marketing Manager at VWX Company, I developed and executed marketing campaigns that increased brand awareness and drove sales growth." ;
+	ns2:positions_duration_years	4 .
+ns62:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	10 ;
+	ns2:applicant_id	6 ;
+	ns2:positions_company_name	"YZA Corporation" ;
+	ns2:positions_company_uri	"YZACorporation" ;
+	ns2:positions_title	"Human Resources Manager" ;
+	ns2:positions_title_uri	"HumanResourcesManager" ;
+	ns2:positions_startdate	"2018-06-01"^^xsd:date ;
+	ns2:positions_iscurrent	"true" ;
+	ns2:positions_summary	"As Human Resources Manager at YZA Corporation, I managed the recruitment, onboarding, and training of new employees, as well as employee relations and benefits administration." ;
+	ns2:positions_duration_years	3 .
+ns63:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	11 ;
+	ns2:applicant_id	6 ;
+	ns2:positions_company_name	"YZA Corporation" ;
+	ns2:positions_company_uri	"YZACorporation" ;
+	ns2:positions_title	"Financial Analyst" ;
+	ns2:positions_title_uri	"FinancialAnalyst" ;
+	ns2:positions_startdate	"2017-03-01"^^xsd:date ;
+	ns2:positions_enddate	"2019-08-31"^^xsd:date ;
+	ns2:positions_iscurrent	"false" ;
+	ns2:positions_summary	"As Financial Analyst at YZA Corporation, I performed financial modeling and analysis to support strategic decision-making and improve operational efficiency." ;
+	ns2:positions_duration_years	4 .
+ns64:this
+	rdf:type	ns2:applicant_positions ;
+	ns2:id	12 ;
+	ns2:applicant_id	7 ;
+	ns2:positions_company_name	"ABC Inc." ;
+	ns2:positions_company_uri	"ABCInc" ;
+	ns2:positions_title	"Project Manager" ;
+	ns2:positions_title_uri	"ProjectManager" ;
+	ns2:positions_startdate	"2019-01-01"^^xsd:date ;
+	ns2:positions_iscurrent	"true" ;
+	ns2:positions_summary	"As Project Manager at ABC Inc., I led cross-functional teams to plan and execute complex projects, ensuring on-time delivery and high-quality outcomes." ;
+	ns2:positions_duration_years	5 .

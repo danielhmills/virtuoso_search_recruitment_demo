@@ -1,0 +1,89 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix exec_rec_search: <http://demo.openlinksw.com/schemas/exec_rec_search/> .
+@prefix exec_rec_search-stat: <http://demo.openlinksw.com/exec_rec_search/stat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix aowl: <http://bblfish.net/work/atom-owl/2006-06-06/> .
+
+
+<#TriplesMapapplicant_certifications> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "Demo" ; rr:tableOwner "search" ; rr:tableName "applicant_certifications" ]; 
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/Demo/applicant_certifications/id/{id}#this"; rr:class exec_rec_search:applicant_certifications; rr:graph <http://demo.openlinksw.com/exec_rec_search#> ];
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:id ] ; rr:objectMap [ rr:column "id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:certifications_name ] ; rr:objectMap [ rr:column "certifications_name" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:certifications_authority ] ; rr:objectMap [ rr:column "certifications_authority" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:certifications_date ] ; rr:objectMap [ rr:column "certifications_date" ]; ] .
+
+<#TriplesMapapplicant_education> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "Demo" ; rr:tableOwner "search" ; rr:tableName "applicant_education" ]; 
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/Demo/applicant_education/id/{id}#this"; rr:class exec_rec_search:applicant_education; rr:graph <http://demo.openlinksw.com/exec_rec_search#> ];
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:id ] ; rr:objectMap [ rr:column "id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_school_name ] ; rr:objectMap [ rr:column "education_school_name" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_school_name_uri ] ; rr:objectMap [ rr:column "education_school_name_uri" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_degree ] ; rr:objectMap [ rr:column "education_degree" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_degree_uri ] ; rr:objectMap [ rr:column "education_degree_uri" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_field_of_study ] ; rr:objectMap [ rr:column "education_field_of_study" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_field_of_study_uri ] ; rr:objectMap [ rr:column "education_field_of_study_uri" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_start_date ] ; rr:objectMap [ rr:column "education_start_date" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_end_date ] ; rr:objectMap [ rr:column "education_end_date" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:education_is_completed ] ; rr:objectMap [ rr:column "education_is_completed" ]; ] .
+
+<#TriplesMapapplicant_languages> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "Demo" ; rr:tableOwner "search" ; rr:tableName "applicant_languages" ]; 
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/Demo/applicant_languages/applicant_id/{applicant_id}/language/{language}#this"; rr:class exec_rec_search:applicant_languages; rr:graph <http://demo.openlinksw.com/exec_rec_search#> ];
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:id ] ; rr:objectMap [ rr:column "id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:applicant_id ] ; rr:objectMap [ rr:column "applicant_id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:language ] ; rr:objectMap [ rr:column "language" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:proficiency ] ; rr:objectMap [ rr:column "proficiency" ]; ] .
+
+<#TriplesMapapplicant_positions> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "Demo" ; rr:tableOwner "search" ; rr:tableName "applicant_positions" ]; 
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/Demo/applicant_positions/applicant_id/{applicant_id}/positions_company_name/{positions_company_name}/id/{id}#this"; rr:class exec_rec_search:applicant_positions; rr:graph <http://demo.openlinksw.com/exec_rec_search#> ];
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:id ] ; rr:objectMap [ rr:column "id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:applicant_id ] ; rr:objectMap [ rr:column "applicant_id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_company_name ] ; rr:objectMap [ rr:column "positions_company_name" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_company_uri ] ; rr:objectMap [ rr:column "positions_company_uri" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_title ] ; rr:objectMap [ rr:column "positions_title" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_title_uri ] ; rr:objectMap [ rr:column "positions_title_uri" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_startdate ] ; rr:objectMap [ rr:column "positions_startDate" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_enddate ] ; rr:objectMap [ rr:column "positions_endDate" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_iscurrent ] ; rr:objectMap [ rr:column "positions_isCurrent" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_summary ] ; rr:objectMap [ rr:column "positions_summary" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:positions_duration_years ] ; rr:objectMap [ rr:column "positions_duration_years" ]; ] .
+
+<#TriplesMapapplicant_skills> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "Demo" ; rr:tableOwner "search" ; rr:tableName "applicant_skills" ]; 
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/Demo/applicant_skills/applicant_id/{applicant_id}/skill_class/{skill_class}#this"; rr:class exec_rec_search:applicant_skills; rr:graph <http://demo.openlinksw.com/exec_rec_search#> ];
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:id ] ; rr:objectMap [ rr:column "id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:applicant_id ] ; rr:objectMap [ rr:column "applicant_id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_class ] ; rr:objectMap [ rr:column "skill_class" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_name ] ; rr:objectMap [ rr:column "skill_name" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_level ] ; rr:objectMap [ rr:column "skill_level" ]; ] .
+
+<#TriplesMapapplicants> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "Demo" ; rr:tableOwner "search" ; rr:tableName "applicants" ]; 
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/Demo/applicants/applicant_id/{applicant_id}#this"; rr:class exec_rec_search:applicants; rr:graph <http://demo.openlinksw.com/exec_rec_search#> ];
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:applicant_id ] ; rr:objectMap [ rr:column "applicant_id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:first_name ] ; rr:objectMap [ rr:column "first_name" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:last_name ] ; rr:objectMap [ rr:column "last_name" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:email ] ; rr:objectMap [ rr:column "email" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:phone_number ] ; rr:objectMap [ rr:column "phone_number" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:street_address ] ; rr:objectMap [ rr:column "street_address" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:city ] ; rr:objectMap [ rr:column "city" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:state ] ; rr:objectMap [ rr:column "state" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:zip_code ] ; rr:objectMap [ rr:column "zip_code" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:location_uri ] ; rr:objectMap [ rr:column "location_uri" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:state_uri ] ; rr:objectMap [ rr:column "state_uri" ]; ] .
+
+<#TriplesMapjob_postings> a rr:TriplesMap; rr:logicalTable [ rr:tableSchema "Demo" ; rr:tableOwner "search" ; rr:tableName "job_postings" ]; 
+rr:subjectMap [ rr:termType rr:IRI  ; rr:template "http://demo.openlinksw.com/Demo/job_postings/id/{id}#this"; rr:class exec_rec_search:job_postings; rr:graph <http://demo.openlinksw.com/exec_rec_search#> ];
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:id ] ; rr:objectMap [ rr:column "id" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:company ] ; rr:objectMap [ rr:column "company" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:company_class ] ; rr:objectMap [ rr:column "company_class" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:title ] ; rr:objectMap [ rr:column "title" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:title_dbpedia ] ; rr:objectMap [ rr:column "title_dbpedia" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:title_class ] ; rr:objectMap [ rr:column "title_class" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:category ] ; rr:objectMap [ rr:column "category" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:employment_type ] ; rr:objectMap [ rr:column "employment_type" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:location ] ; rr:objectMap [ rr:column "location" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_1 ] ; rr:objectMap [ rr:column "skill_1" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_2 ] ; rr:objectMap [ rr:column "skill_2" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_3 ] ; rr:objectMap [ rr:column "skill_3" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_1_class ] ; rr:objectMap [ rr:column "skill_1_class" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_2_class ] ; rr:objectMap [ rr:column "skill_2_class" ]; ] ;
+rr:predicateObjectMap [ rr:predicateMap [ rr:constant exec_rec_search:skill_3_class ] ; rr:objectMap [ rr:column "skill_3_class" ]; ] .

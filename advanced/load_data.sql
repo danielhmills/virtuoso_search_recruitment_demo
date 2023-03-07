@@ -1,8 +1,3 @@
--- Ontology Cleanup + Loading
-
-SPARQL CLEAR GRAPH <https://raw.githubusercontent.com/danielhmills/virtuoso_search_recruitment_demo/main/ontology.ttl>;
-SPARQL LOAD <https://raw.githubusercontent.com/danielhmills/virtuoso_search_recruitment_demo/main/ontology.ttl>;
-
 -- SQL Table Creation + Data Entry
 -- Load Applicant Info
 

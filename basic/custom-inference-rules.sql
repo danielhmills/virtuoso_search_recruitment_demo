@@ -23,7 +23,7 @@ INSERT{
                     a sp:Construct;
                     sp:text """
                                 #Skills
-                                
+
                                 prefix recruitment: <http://demo.openlinksw.com/schemas/exec_rec_search/>
 
                                 CONSTRUCT {?s recruitment:hasSkill ?skill.}
@@ -44,11 +44,23 @@ INSERT{
 
 EXEC ('SPARQL ' || SPARQL_SPIN_GRAPH_TO_DEFSPIN('spin:demo:recruitment:rule'));
 
+-- Test 0: Query With Inference Rule
 SPARQL
 DEFINE input:macro-lib <spin:demo:recruitment:rule>
 PREFIX recruitment: <http://demo.openlinksw.com/schemas/exec_rec_search/>
 SELECT ?s ?skill
-WHERE{
+WHERE
+{
 
  ?s a recruitment:job_postings; recruitment:hasSkill ?skill.
-}
+};
+
+-- Test 1: Query With Inference Rule
+SPARQL
+#DEFINE input:macro-lib <spin:demo:recruitment:rule>
+PREFIX recruitment: <http://demo.openlinksw.com/schemas/exec_rec_search/>
+SELECT ?s ?skill
+WHERE
+{
+ ?s a recruitment:job_postings; recruitment:hasSkill ?skill.
+};

@@ -1,507 +1,593 @@
-@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ns1:	<http://demo.openlinksw.com/schemas/recruitment_demo_generated/> .
-@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
-@prefix gql:	<http://www.openlinksw.com/schemas/graphql#> .
-@prefix owl:	<http://www.w3.org/2002/07/owl#> .
-@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix aowl: <http://bblfish.net/work/atom-owl/2006-06-06/> .
+@prefix virtrdf: <http://www.openlinksw.com/schemas/virtrdf#> .
+@prefix gql: <http://www.openlinksw.com/schemas/graphql#> .
+@prefix exec_rec_search: <http://demo.openlinksw.com/schemas/exec_rec_search/> .
 
-ns1:applicant_certifications
-	rdf:type	rdfs:Class ;
-	rdfs:label	"demo.search.applicant_certifications" ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:applicant_certifications .
-ns1:applicant_education
-	rdf:type	rdfs:Class ;
-	rdfs:label	"demo.search.applicant_education" ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:applicant_education .
-ns1:applicant_languages
-	rdf:type	rdfs:Class ;
-	rdfs:label	"demo.search.applicant_languages" ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:applicant_languages .
-ns1:applicant_positions
-	rdf:type	rdfs:Class ;
-	rdfs:label	"demo.search.applicant_positions" ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:applicant_positions .
-ns1:applicant_skills
-	rdf:type	rdfs:Class ;
-	rdfs:label	"demo.search.applicant_skills" ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:applicant_skills .
-ns1:applicants
-	rdf:type	rdfs:Class ;
-	rdfs:label	"demo.search.applicants" ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:applicants .
-ns1:job_postings
-	rdf:type	rdfs:Class ;
-	rdfs:label	"demo.search.job_postings" ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:job_postings .
-ns1:id
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"id" ;
-	rdfs:domain	ns1:applicant_certifications , ns1:applicant_education , ns1:applicant_languages , ns1:applicant_positions , ns1:applicant_skills , ns1:job_postings ;
-	rdfs:range	xsd:int ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:id ;
-	gql:type	gql:Scalar .
-ns1:certifications_name
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"certifications_name" ;
-	rdfs:domain	ns1:applicant_certifications ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:certifications_name ;
-	gql:type	gql:Scalar .
-ns1:certifications_authority
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"certifications_authority" ;
-	rdfs:domain	ns1:applicant_certifications ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:certifications_authority ;
-	gql:type	gql:Scalar .
-ns1:certifications_date
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"certifications_date" ;
-	rdfs:domain	ns1:applicant_certifications ;
-	rdfs:range	xsd:date ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:certifications_date ;
-	gql:type	gql:Scalar .
-ns1:education_school_name
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_school_name" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_school_name ;
-	gql:type	gql:Scalar .
-ns1:education_school_name_uri
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_school_name_uri" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_school_name_uri ;
-	gql:type	gql:Scalar .
-ns1:education_degree
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_degree" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_degree ;
-	gql:type	gql:Scalar .
-ns1:education_degree_uri
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_degree_uri" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_degree_uri ;
-	gql:type	gql:Scalar .
-ns1:education_field_of_study
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_field_of_study" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_field_of_study ;
-	gql:type	gql:Scalar .
-ns1:education_field_of_study_uri
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_field_of_study_uri" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_field_of_study_uri ;
-	gql:type	gql:Scalar .
-ns1:education_start_date
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_start_date" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:date ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_start_date ;
-	gql:type	gql:Scalar .
-ns1:education_end_date
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_end_date" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:date ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_end_date ;
-	gql:type	gql:Scalar .
-ns1:education_is_completed
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"education_is_completed" ;
-	rdfs:domain	ns1:applicant_education ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:education_is_completed ;
-	gql:type	gql:Scalar .
-ns1:applicant_id
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"applicant_id" ;
-	rdfs:domain	ns1:applicant_languages , ns1:applicant_positions , ns1:applicant_skills , ns1:applicants ;
-	rdfs:range	xsd:int ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:applicant_id ;
-	gql:type	gql:Scalar .
-ns1:language
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"language" ;
-	rdfs:domain	ns1:applicant_languages ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:language ;
-	gql:type	gql:Scalar .
-ns1:proficiency
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"proficiency" ;
-	rdfs:domain	ns1:applicant_languages ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:proficiency ;
-	gql:type	gql:Scalar .
-ns1:positions_company_name
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_company_name" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_company_name ;
-	gql:type	gql:Scalar .
-ns1:positions_company_uri
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_company_uri" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_company_uri ;
-	gql:type	gql:Scalar .
-ns1:positions_title
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_title" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_title ;
-	gql:type	gql:Scalar .
-ns1:positions_title_uri
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_title_uri" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_title_uri ;
-	gql:type	gql:Scalar .
-ns1:positions_startdate
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_startDate" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:date ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_startdate ;
-	gql:type	gql:Scalar .
-ns1:positions_enddate
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_endDate" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:date ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_enddate ;
-	gql:type	gql:Scalar .
-ns1:positions_iscurrent
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_isCurrent" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_iscurrent ;
-	gql:type	gql:Scalar .
-ns1:positions_summary
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_summary" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_summary ;
-	gql:type	gql:Scalar .
-ns1:positions_duration_years
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"positions_duration_years" ;
-	rdfs:domain	ns1:applicant_positions ;
-	rdfs:range	xsd:int ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:positions_duration_years ;
-	gql:type	gql:Scalar .
-ns1:skill_class
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_class" ;
-	rdfs:domain	ns1:applicant_skills ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_class ;
-	gql:type	gql:Scalar .
-ns1:skill_name
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_name" ;
-	rdfs:domain	ns1:applicant_skills ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_name ;
-	gql:type	gql:Scalar .
-ns1:skill_level
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_level" ;
-	rdfs:domain	ns1:applicant_skills ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_level ;
-	gql:type	gql:Scalar .
-ns1:first_name
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"first_name" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:first_name ;
-	gql:type	gql:Scalar .
-ns1:last_name
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"last_name" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:last_name ;
-	gql:type	gql:Scalar .
-ns1:email
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"email" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:email ;
-	gql:type	gql:Scalar .
-ns1:phone_number
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"phone_number" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:phone_number ;
-	gql:type	gql:Scalar .
-ns1:street_address
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"street_address" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:street_address ;
-	gql:type	gql:Scalar .
-ns1:city
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"city" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:city ;
-	gql:type	gql:Scalar .
-ns1:state
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"state" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:state ;
-	gql:type	gql:Scalar .
-ns1:zip_code
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"zip_code" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:zip_code ;
-	gql:type	gql:Scalar .
-ns1:location_uri
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"location_uri" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:location_uri ;
-	gql:type	gql:Scalar .
-ns1:state_uri
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"state_uri" ;
-	rdfs:domain	ns1:applicants ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:state_uri ;
-	gql:type	gql:Scalar .
-ns1:company
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"company" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:company ;
-	gql:type	gql:Scalar .
-ns1:company_class
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"company_class" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:company_class ;
-	gql:type	gql:Scalar .
-ns1:title
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"title" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:title ;
-	gql:type	gql:Scalar .
-ns1:title_dbpedia
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"title_dbpedia" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:title_dbpedia ;
-	gql:type	gql:Scalar .
-ns1:title_class
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"title_class" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:title_class ;
-	gql:type	gql:Scalar .
-ns1:category
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"category" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:category ;
-	gql:type	gql:Scalar .
-ns1:employment_type
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"employment_type" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:employment_type ;
-	gql:type	gql:Scalar .
-ns1:location
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"location" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:location ;
-	gql:type	gql:Scalar .
-ns1:skill_1
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_1" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_1 ;
-	gql:type	gql:Scalar .
-ns1:skill_2
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_2" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_2 ;
-	gql:type	gql:Scalar .
-ns1:skill_3
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_3" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_3 ;
-	gql:type	gql:Scalar .
-ns1:skill_1_class
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_1_class" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_1_class ;
-	gql:type	gql:Scalar .
-ns1:skill_2_class
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_2_class" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_2_class ;
-	gql:type	gql:Scalar .
-ns1:skill_3_class
-	rdf:type	owl:DatatypeProperty ;
-	rdfs:label	"skill_3_class" ;
-	rdfs:domain	ns1:job_postings ;
-	rdfs:range	xsd:string ;
-	rdfs:isDefinedBy	ns1: ;
-	gql:field	gql:skill_3_class ;
-	gql:type	gql:Scalar .
-gql:Map
-	gql:dataGraph	<http://demo.openlinksw.com/rq_test#> ;
-	gql:schemaGraph	ns1: ;
-	gql:schemaObjects	gql:applicant_certifications , gql:applicant_education , gql:applicant_languages , gql:applicant_positions , gql:applicant_skills , gql:applicants , gql:job_postings .
-gql:applicant_certifications
-	gql:rdfClass	ns1:applicant_certifications ;
-	gql:type	gql:Array .
-gql:applicant_certificationsObject
-	gql:rdfClass	ns1:applicant_certifications ;
-	gql:type	gql:Object .
-gql:applicant_education
-	gql:rdfClass	ns1:applicant_education ;
-	gql:type	gql:Array .
-gql:applicant_educationObject
-	gql:rdfClass	ns1:applicant_education ;
-	gql:type	gql:Object .
-gql:applicant_languages
-	gql:rdfClass	ns1:applicant_languages ;
-	gql:type	gql:Array .
-gql:applicant_languagesObject
-	gql:rdfClass	ns1:applicant_languages ;
-	gql:type	gql:Object .
-gql:applicant_positions
-	gql:rdfClass	ns1:applicant_positions ;
-	gql:type	gql:Array .
-gql:applicant_positionsObject
-	gql:rdfClass	ns1:applicant_positions ;
-	gql:type	gql:Object .
-gql:applicant_skills
-	gql:rdfClass	ns1:applicant_skills ;
-	gql:type	gql:Array .
-gql:applicant_skillsObject
-	gql:rdfClass	ns1:applicant_skills ;
-	gql:type	gql:Object .
-gql:applicants
-	gql:rdfClass	ns1:applicants ;
-	gql:type	gql:Array .
-gql:applicantsObject
-	gql:rdfClass	ns1:applicants ;
-	gql:type	gql:Object .
-gql:job_postings
-	gql:rdfClass	ns1:job_postings ;
-	gql:type	gql:Array .
-gql:job_postingsObject
-	gql:rdfClass	ns1:job_postings ;
-	gql:type	gql:Object .
-ns1:
-	rdf:type	owl:Ontology .
+exec_rec_search: a owl:Ontology .
 
+# Demo.search.applicant_certifications
+
+gql:applicant_certifications gql:type gql:Array;
+  gql:rdfClass exec_rec_search:applicant_certifications .
+
+gql:applicant_certificationsObject gql:type gql:Object;
+  gql:rdfClass exec_rec_search:applicant_certifications .
+
+exec_rec_search:applicant_certifications a rdfs:Class ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_certifications ;
+  rdfs:label "Demo.search.applicant_certifications" .
+
+exec_rec_search:id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_certifications ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:id ;
+  rdfs:label "id" .
+
+exec_rec_search:certifications_name a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_certifications ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:certifications_name ;
+  rdfs:label "certifications_name" .
+
+exec_rec_search:certifications_authority a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_certifications ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:certifications_authority ;
+  rdfs:label "certifications_authority" .
+
+exec_rec_search:certifications_date a owl:DatatypeProperty ;
+  rdfs:range xsd:date ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_certifications ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:certifications_date ;
+  rdfs:label "certifications_date" .
+
+
+# Demo.search.applicant_education
+
+gql:applicant_education gql:type gql:Array;
+  gql:rdfClass exec_rec_search:applicant_education .
+
+gql:applicant_educationObject gql:type gql:Object;
+  gql:rdfClass exec_rec_search:applicant_education .
+
+exec_rec_search:applicant_education a rdfs:Class ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_education ;
+  rdfs:label "Demo.search.applicant_education" .
+
+exec_rec_search:id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:id ;
+  rdfs:label "id" .
+
+exec_rec_search:education_school_name a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_school_name ;
+  rdfs:label "education_school_name" .
+
+exec_rec_search:education_school_name_uri a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_school_name_uri ;
+  rdfs:label "education_school_name_uri" .
+
+exec_rec_search:education_degree a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_degree ;
+  rdfs:label "education_degree" .
+
+exec_rec_search:education_degree_uri a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_degree_uri ;
+  rdfs:label "education_degree_uri" .
+
+exec_rec_search:education_field_of_study a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_field_of_study ;
+  rdfs:label "education_field_of_study" .
+
+exec_rec_search:education_field_of_study_uri a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_field_of_study_uri ;
+  rdfs:label "education_field_of_study_uri" .
+
+exec_rec_search:education_start_date a owl:DatatypeProperty ;
+  rdfs:range xsd:date ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_start_date ;
+  rdfs:label "education_start_date" .
+
+exec_rec_search:education_end_date a owl:DatatypeProperty ;
+  rdfs:range xsd:date ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_end_date ;
+  rdfs:label "education_end_date" .
+
+exec_rec_search:education_is_completed a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_education ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:education_is_completed ;
+  rdfs:label "education_is_completed" .
+
+
+# Demo.search.applicant_languages
+
+gql:applicant_languages gql:type gql:Array;
+  gql:rdfClass exec_rec_search:applicant_languages .
+
+gql:applicant_languagesObject gql:type gql:Object;
+  gql:rdfClass exec_rec_search:applicant_languages .
+
+exec_rec_search:applicant_languages a rdfs:Class ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_languages ;
+  rdfs:label "Demo.search.applicant_languages" .
+
+exec_rec_search:id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_languages ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:id ;
+  rdfs:label "id" .
+
+exec_rec_search:applicant_id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_languages ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_id ;
+  rdfs:label "applicant_id" .
+
+exec_rec_search:language a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_languages ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:language ;
+  rdfs:label "language" .
+
+exec_rec_search:proficiency a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_languages ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:proficiency ;
+  rdfs:label "proficiency" .
+
+
+# Demo.search.applicant_positions
+
+gql:applicant_positions gql:type gql:Array;
+  gql:rdfClass exec_rec_search:applicant_positions .
+
+gql:applicant_positionsObject gql:type gql:Object;
+  gql:rdfClass exec_rec_search:applicant_positions .
+
+exec_rec_search:applicant_positions a rdfs:Class ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_positions ;
+  rdfs:label "Demo.search.applicant_positions" .
+
+exec_rec_search:id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:id ;
+  rdfs:label "id" .
+
+exec_rec_search:applicant_id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_id ;
+  rdfs:label "applicant_id" .
+
+exec_rec_search:positions_company_name a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_company_name ;
+  rdfs:label "positions_company_name" .
+
+exec_rec_search:positions_company_uri a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_company_uri ;
+  rdfs:label "positions_company_uri" .
+
+exec_rec_search:positions_title a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_title ;
+  rdfs:label "positions_title" .
+
+exec_rec_search:positions_title_uri a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_title_uri ;
+  rdfs:label "positions_title_uri" .
+
+exec_rec_search:positions_startdate a owl:DatatypeProperty ;
+  rdfs:range xsd:date ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_startdate ;
+  rdfs:label "positions_startDate" .
+
+exec_rec_search:positions_enddate a owl:DatatypeProperty ;
+  rdfs:range xsd:date ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_enddate ;
+  rdfs:label "positions_endDate" .
+
+exec_rec_search:positions_iscurrent a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_iscurrent ;
+  rdfs:label "positions_isCurrent" .
+
+exec_rec_search:positions_summary a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_summary ;
+  rdfs:label "positions_summary" .
+
+exec_rec_search:positions_duration_years a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_positions ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:positions_duration_years ;
+  rdfs:label "positions_duration_years" .
+
+
+# Demo.search.applicant_skills
+
+gql:applicant_skills gql:type gql:Array;
+  gql:rdfClass exec_rec_search:applicant_skills .
+
+gql:applicant_skillsObject gql:type gql:Object;
+  gql:rdfClass exec_rec_search:applicant_skills .
+
+exec_rec_search:applicant_skills a rdfs:Class ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_skills ;
+  rdfs:label "Demo.search.applicant_skills" .
+
+exec_rec_search:id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_skills ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:id ;
+  rdfs:label "id" .
+
+exec_rec_search:applicant_id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_skills ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_id ;
+  rdfs:label "applicant_id" .
+
+exec_rec_search:skill_class a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_skills ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_class ;
+  rdfs:label "skill_class" .
+
+exec_rec_search:skill_name a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_skills ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_name ;
+  rdfs:label "skill_name" .
+
+exec_rec_search:skill_level a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicant_skills ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_level ;
+  rdfs:label "skill_level" .
+
+
+# Demo.search.applicants
+
+gql:applicants gql:type gql:Array;
+  gql:rdfClass exec_rec_search:applicants .
+
+gql:applicantsObject gql:type gql:Object;
+  gql:rdfClass exec_rec_search:applicants .
+
+exec_rec_search:applicants a rdfs:Class ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicants ;
+  rdfs:label "Demo.search.applicants" .
+
+exec_rec_search:applicant_id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:applicant_id ;
+  rdfs:label "applicant_id" .
+
+exec_rec_search:first_name a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:first_name ;
+  rdfs:label "first_name" .
+
+exec_rec_search:last_name a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:last_name ;
+  rdfs:label "last_name" .
+
+exec_rec_search:email a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:email ;
+  rdfs:label "email" .
+
+exec_rec_search:phone_number a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:phone_number ;
+  rdfs:label "phone_number" .
+
+exec_rec_search:street_address a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:street_address ;
+  rdfs:label "street_address" .
+
+exec_rec_search:city a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:city ;
+  rdfs:label "city" .
+
+exec_rec_search:state a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:state ;
+  rdfs:label "state" .
+
+exec_rec_search:zip_code a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:zip_code ;
+  rdfs:label "zip_code" .
+
+exec_rec_search:location_uri a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:location_uri ;
+  rdfs:label "location_uri" .
+
+exec_rec_search:state_uri a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:applicants ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:state_uri ;
+  rdfs:label "state_uri" .
+
+
+# Demo.search.job_postings
+
+gql:job_postings gql:type gql:Array;
+  gql:rdfClass exec_rec_search:job_postings .
+
+gql:job_postingsObject gql:type gql:Object;
+  gql:rdfClass exec_rec_search:job_postings .
+
+exec_rec_search:job_postings a rdfs:Class ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:job_postings ;
+  rdfs:label "Demo.search.job_postings" .
+
+exec_rec_search:id a owl:DatatypeProperty ;
+  rdfs:range xsd:int ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:id ;
+  rdfs:label "id" .
+
+exec_rec_search:company a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:company ;
+  rdfs:label "company" .
+
+exec_rec_search:company_class a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:company_class ;
+  rdfs:label "company_class" .
+
+exec_rec_search:title a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:title ;
+  rdfs:label "title" .
+
+exec_rec_search:title_dbpedia a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:title_dbpedia ;
+  rdfs:label "title_dbpedia" .
+
+exec_rec_search:title_class a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:title_class ;
+  rdfs:label "title_class" .
+
+exec_rec_search:category a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:category ;
+  rdfs:label "category" .
+
+exec_rec_search:employment_type a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:employment_type ;
+  rdfs:label "employment_type" .
+
+exec_rec_search:location a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:location ;
+  rdfs:label "location" .
+
+exec_rec_search:skill_1 a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_1 ;
+  rdfs:label "skill_1" .
+
+exec_rec_search:skill_2 a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_2 ;
+  rdfs:label "skill_2" .
+
+exec_rec_search:skill_3 a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_3 ;
+  rdfs:label "skill_3" .
+
+exec_rec_search:skill_1_class a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_1_class ;
+  rdfs:label "skill_1_class" .
+
+exec_rec_search:skill_2_class a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_2_class ;
+  rdfs:label "skill_2_class" .
+
+exec_rec_search:skill_3_class a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  gql:type gql:Scalar ;
+  rdfs:domain exec_rec_search:job_postings ;
+  rdfs:isDefinedBy exec_rec_search: ;
+  gql:field gql:skill_3_class ;
+  rdfs:label "skill_3_class" .
+
+
+
+gql:Map gql:dataGraph <http://demo.openlinksw.com/exec_rec_search#> ;
+  gql:schemaGraph exec_rec_search: ;
+  gql:schemaObjects gql:applicant_certifications, gql:applicant_education, gql:applicant_languages, gql:applicant_positions, gql:applicant_skills, gql:applicants, gql:job_postings.

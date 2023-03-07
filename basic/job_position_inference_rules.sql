@@ -1,3 +1,4 @@
+-- Job Position-Besed Rules
 -- Cleanup
 
 SPARQL CLEAR GRAPH <spin:demo:recruitment:jobhopping:rule>;
